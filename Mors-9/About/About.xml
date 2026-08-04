@@ -2,7 +2,7 @@
 <ModMetaData>
   <packageId>ketamjjne.TheAwakening</PackageId>  <!-- Unique ID -->
   <name>Mors-9: The Awakening</name>
-  <Author>ketamjjne</Author>
+  <author>ketamjjne</author>
   <packageId>Mors9.TheAwakening</packageId>
   <author>YourName</author>
   <modVersion>1.0.0</modVersion>
