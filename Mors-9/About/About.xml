@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ModMetaData>
-  <PackageId>ketamjjne.TheAwakening</PackageId>  <!-- Unique ID -->
+  <packageId>ketamjjne.TheAwakening</PackageId>  <!-- Unique ID -->
   <name>Mors-9: The Awakening</name>
   <Author>ketamjjne</Author>
   <packageId>Mors9.TheAwakening</packageId>
