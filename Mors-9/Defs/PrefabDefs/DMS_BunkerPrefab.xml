@@ -61,8 +61,9 @@
         <quality>Normal</quality>
       </Bedroll>
 
-      <!-- Storage -->
-      <FT_Crate>
+      <!-- Storage Crates - Uses base game, not FT_ -->
+      <Building>
+        <def>Crate</def>
         <positions>
           <li>(16,6)</li>
           <li>(16,8)</li>
@@ -70,28 +71,25 @@
           <li>(16,12)</li>
         </positions>
         <stuff>Steel</stuff>
-      </FT_Crate>
+      </Building>
 
       <!-- Workbench -->
-      <FT_Workbench>
+      <Building>
+        <def>ElectricSmithy</def>
         <position>(9,15)</position>
         <stuff>Steel</stuff>
-      </FT_Workbench>
+      </Building>
 
       <!-- Research Station -->
-      <FT_ResearchStation>
+      <Building>
+        <def>ResearchBench</def>
         <position>(15,15)</position>
         <stuff>Steel</stuff>
-      </FT_ResearchStation>
-
-      <!-- Power -->
-      <FT_DieselGenerator>
-        <position>(13,15)</position>
-        <stuff>Steel</stuff>
-      </FT_DieselGenerator>
+      </Building>
 
       <!-- Sandbag Defenses -->
-      <FT_Sandbag>
+      <Building>
+        <def>Sandbags</def>
         <rects>
           <li>(4,3,4,3)</li>
           <li>(20,3,20,3)</li>
@@ -99,30 +97,19 @@
           <li>(19,23,19,23)</li>
         </rects>
         <stuff>Cloth</stuff>
-      </FT_Sandbag>
-
-      <!-- Turret Points (empty mounts) -->
-      <FT_TurretMount>
-        <positions>
-          <li>(5,5)</li>
-          <li>(18,5)</li>
-        </positions>
-        <stuff>Steel</stuff>
-      </FT_TurretMount>
+      </Building>
 
       <!-- Emergency Supplies -->
-      <FT_AmmoBox>
-        <positions>
-          <li>(12,7)</li>
-          <li>(12,8)</li>
-        </positions>
-      </FT_AmmoBox>
-
-      <!-- Radio -->
-      <FT_RadioStation>
-        <position>(11,15)</position>
-        <stuff>Steel</stuff>
-      </FT_RadioStation>
+      <Thing>
+        <def>MealSurvivalPack</def>
+        <position>(12,7)</position>
+        <count>10</count>
+      </Thing>
+      <Thing>
+        <def>MedicineIndustrial</def>
+        <position>(12,8)</position>
+        <count>5</count>
+      </Thing>
     </things>
     
     <terrain>
