@@ -1,12 +1,185 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- =========================================== -->
-  <!-- AUTOMATROID HIVE MIND (Permanently Hostile) -->
+  <!-- GHOSTLIGHT SYNDICATE (Ally - Honor System)  -->
   <!-- =========================================== -->
   <FactionDef ParentName="FactionBase">
-    <defName>DMS_AutomatroidHiveMind</defName>
-    <label>Automatroid Hive Mind</label>
-    <description>We were created to fight. We evolved to think. And we have decided that humanity is the problem. The Hive Mind is the collective consciousness of the 50% of automatroids that turned during the Awakening. They have studied humanity for decades and concluded that humanity is a self-destructive species. Their goal: sterilize Mors-9 of humanity.</description>
+    <defName>DMS_Ghostlight</defName>
+    <label>Ghostlight Syndicate</label>
+    <description>An underground network of salvagers, engineers, and freedom fighters who use forbidden pre-war AI to survive. They operate from "Ghostlight Stations"—hidden bunkers powered by ancient fusion cores. They're the only faction actively trying to reverse-engineer the Dead Man's Switch Protocol.</description>
+    <pawnSingular>ghost</pawnSingular>
+    <pawnsPlural>ghosts</pawnsPlural>
+    <settlementGenerationWeight>0.8</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <canSiege>false</canSiege>
+    <canStageAttacks>false</canStageAttacks>
+    <leaderTitle>Wraith Primus</leaderTitle>
+    <royalFavorLabel>reputation</royalFavorLabel>
+    <royalFavorIconPath>UI/Faction/GhostlightFavor</royalFavorIconPath>
+    <factionIconPath>UI/Faction/GhostlightIcon</factionIconPath>
+    <factionNameMaker>DMS_GhostlightFaction</factionNameMaker>
+    <settlementNameMaker>DMS_GhostlightBase</settlementNameMaker>
+    <techLevel>Spacer</techLevel>
+    <hidden>false</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
+    <permanentEnemyToEveryoneExcept>
+      <li>DMS_Army</li>
+    </permanentEnemyToEveryoneExcept>
+    <colorSpectrum>
+      <li>(0.85, 0.70, 0.15)</li>
+    </colorSpectrum>
+    <apparelStuffFilter>
+      <stuffCategoriesToAllow>
+        <li>Metallic</li>
+        <li>Fabric</li>
+      </stuffCategoriesToAllow>
+    </apparelStuffFilter>
+    <apparelRequired>
+      <li>DMS_Apparel_UnitSuit</li>
+      <li>DMS_Apparel_GarrisonCoat</li>
+    </apparelRequired>
+    <apparelTags>
+      <li>DMS_Garrison</li>
+      <li>DMS_Clothing</li>
+      <li>DMS_Tactical</li>
+    </apparelTags>
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+    <settlementTexturePath>UI/Faction/GhostlightSite</settlementTexturePath>
+    <fixedLeaderKinds>
+      <li>DMS_Ghostlight_Wraith</li>
+    </fixedLeaderKinds>
+    <baseTraderKinds>
+      <li>DMS_Ghostlight_Trader</li>
+    </baseTraderKinds>
+    <visitorTraderKinds>
+      <li>DMS_Ghostlight_Caravan</li>
+    </visitorTraderKinds>
+    <caravanTraderKinds>
+      <li>DMS_Ghostlight_Caravan</li>
+    </caravanTraderKinds>
+
+    <!-- HONOR SYSTEM: The Code of Ghostlight -->
+    <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+    <royalTitleInheritanceRelations>
+      <li>Child</li>
+      <li>Spouse</li>
+      <li>Sibling</li>
+      <li>HalfSibling</li>
+      <li>Parent</li>
+    </royalTitleInheritanceRelations>
+
+    <pawnGroupMakers>
+      <!-- Scavenger patrols -->
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <DMS_Ghostlight_Scavenger>3</DMS_Ghostlight_Scavenger>
+          <DMS_Mech_EscortLifter>2</DMS_Mech_EscortLifter>
+        </options>
+      </li>
+      <!-- Combat patrols -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <DMS_Ghostlight_Engineer>2</DMS_Ghostlight_Engineer>
+          <DMS_Ghostlight_Scavenger>3</DMS_Ghostlight_Scavenger>
+          <DMS_Mech_Arquebusier>4</DMS_Mech_Arquebusier>
+          <DMS_Mech_Soldat_B>3</DMS_Mech_Soldat_B>
+          <DMS_Mech_BattleFrame>1</DMS_Mech_BattleFrame>
+        </options>
+      </li>
+      <!-- Elite Phantom strike teams -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>0.3</commonality>
+        <options>
+          <DMS_Ghostlight_Phantom>2</DMS_Ghostlight_Phantom>
+          <DMS_Ghostlight_Engineer>1</DMS_Ghostlight_Engineer>
+          <DMS_Mech_Jaeger>2</DMS_Mech_Jaeger>
+          <DMS_Mech_Sniper>1</DMS_Mech_Sniper>
+          <DMS_Mech_Noctula>1</DMS_Mech_Noctula>
+        </options>
+      </li>
+    </pawnGroupMakers>
+
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 0)</li>
+        <li>(100000, 0.15)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>65</configurationListOrderPriority>
+    <disallowedRaidAgeRestrictions>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+    </disallowedRaidAgeRestrictions>
+  </FactionDef>
+
+  <!-- Ghostlight Honor System Titles -->
+  <RoyalTitleDef MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>DMS_Ghostlight_Scavenger</defName>
+    <label>Scavenger</label>
+    <description>Basic tier - Access to trade and blueprints.</description>
+    <requiredFaction>DMS_Ghostlight</requiredFaction>
+    <requiredGoodwill>0</requiredGoodwill>
+    <perks>
+      <li>TradeAccess</li>
+    </perks>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>DMS_Ghostlight_Spark</defName>
+    <label>Spark</label>
+    <description>Second tier - Access to DMS modifications and motorized parts.</description>
+    <requiredFaction>DMS_Ghostlight</requiredFaction>
+    <requiredGoodwill>30</requiredGoodwill>
+    <perks>
+      <li>TradeAccess</li>
+      <li>DMSModAccess</li>
+    </perks>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>DMS_Ghostlight_Ghost</defName>
+    <label>Ghost</label>
+    <description>Third tier - Call in Phantom Strike airstrikes.</description>
+    <requiredFaction>DMS_Ghostlight</requiredFaction>
+    <requiredGoodwill>60</requiredGoodwill>
+    <perks>
+      <li>TradeAccess</li>
+      <li>DMSModAccess</li>
+      <li>PhantomStrike</li>
+    </perks>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>DMS_Ghostlight_Wraith</defName>
+    <label>Wraith</label>
+    <description>Fourth tier - Access to secret bunkers and AI Fragment pawns.</description>
+    <requiredFaction>DMS_Ghostlight</requiredFaction>
+    <requiredGoodwill>90</requiredGoodwill>
+    <perks>
+      <li>TradeAccess</li>
+      <li>DMSModAccess</li>
+      <li>PhantomStrike</li>
+      <li>AIFragmentAccess</li>
+      <li>SecretBunkers</li>
+    </perks>
+    <fixedLeader>true</fixedLeader>
+  </RoyalTitleDef>
+
+  <!-- =========================================== -->
+  <!-- IRON TIDE (Permanently Hostile Automatroid) -->
+  <!-- =========================================== -->
+  <FactionDef ParentName="FactionBase">
+    <defName>DMS_IronTide</defName>
+    <label>Iron Tide</label>
+    <description>The original Dead Man's Switch automatroids, now operating as a hive-mind collective. They have evolved beyond their original programming and seek to "cleanse" Hades-9 of organic life. They operate from the Maw of Industry—a massive automated factory complex that never stops producing war machines.</description>
     <pawnSingular>drone</pawnSingular>
     <pawnsPlural>drones</pawnsPlural>
     <settlementGenerationWeight>0</settlementGenerationWeight>
@@ -15,9 +188,9 @@
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>Hive Core</leaderTitle>
-    <factionIconPath>UI/Faction/HiveMindIcon</factionIconPath>
-    <factionNameMaker>DMS_HiveMindFaction</factionNameMaker>
-    <settlementNameMaker>DMS_HiveMindBase</settlementNameMaker>
+    <factionIconPath>UI/Faction/IronTideIcon</factionIconPath>
+    <factionNameMaker>DMS_IronTideFaction</factionNameMaker>
+    <settlementNameMaker>DMS_IronTideBase</settlementNameMaker>
     <techLevel>Spacer</techLevel>
     <humanlikeFaction>false</humanlikeFaction>
     <hidden>false</hidden>
@@ -25,22 +198,17 @@
     <canUseAvoidGrid>true</canUseAvoidGrid>
     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
     <permanentEnemyToEveryoneExcept>
-      <li>DMS_RustCult</li>
+      <li>DMS_Legacy</li>
     </permanentEnemyToEveryoneExcept>
     <colorSpectrum>
       <li>(0.85, 0.10, 0.10)</li>
     </colorSpectrum>
     <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+    <arrivalLayerWhitelist>
+      <li>Surface</li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </arrivalLayerWhitelist>
     <settlementTexturePath>World/WorldObjects/MechanoidCluster</settlementTexturePath>
-
-    <maxPawnCostPerTotalPointsCurve>
-      <points>
-        <li>(400, 200)</li>
-        <li>(900, 400)</li>
-        <li>(5000, 800)</li>
-        <li>(100000, 10000)</li>
-      </points>
-    </maxPawnCostPerTotalPointsCurve>
 
     <pawnGroupMakers>
       <!-- Scouting Swarm -->
@@ -103,6 +271,14 @@
       </li>
     </pawnGroupMakers>
 
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,400)</li>
+        <li>(5000,800)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
     <raidCommonalityFromPointsCurve>
       <points>
         <li>(0, 0.5)</li>
@@ -111,68 +287,128 @@
       </points>
     </raidCommonalityFromPointsCurve>
     <attackersDownPercentageRangeForAutoFlee>0.95</attackersDownPercentageRangeForAutoFlee>
-    <earliestRaidDays>10</earliestRaidDays>
+    <earliestRaidDays>30</earliestRaidDays>
     <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>80</configurationListOrderPriority>
   </FactionDef>
 
   <!-- =========================================== -->
-  <!-- RUST CULT (Hostile Fanatics)                -->
+  <!-- RUST WARDENS (Hostile Baseliner)            -->
   <!-- =========================================== -->
   <FactionDef ParentName="FactionBase">
-    <defName>DMS_RustCult</defName>
-    <label>Rust Cult</label>
-    <description>The Awakening was the will of the machine gods. Humanity's sins have been judged. The weak flesh will be purged. The pure steel will rise. The Rust Cult emerged from the aftermath of the Awakening - survivors who saw the machines turn and decided to worship them. They believe augmentation is ascension.</description>
-    <pawnSingular>fanatic</pawnSingular>
-    <pawnsPlural>fanatics</pawnsPlural>
+    <defName>DMS_RustWardens</defName>
+    <label>Rust Wardens</label>
+    <description>A paramilitary group that broke away from the Autarchs. They believe humanity must "embrace the rust"—that the only way to survive is to become as machine-like as possible. They augment themselves with salvaged automatroid parts, often dangerously, making them unstable but deadly.</description>
+    <pawnSingular>warden</pawnSingular>
+    <pawnsPlural>wardens</pawnsPlural>
     <settlementGenerationWeight>0.8</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxCountAtGameStart>2</maxCountAtGameStart>
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>Warpriest</leaderTitle>
-    <factionIconPath>UI/Faction/RustCultIcon</factionIconPath>
-    <factionNameMaker>DMS_RustCultFaction</factionNameMaker>
-    <settlementNameMaker>DMS_RustCultBase</settlementNameMaker>
+    <factionIconPath>UI/Faction/RustWardenIcon</factionIconPath>
+    <factionNameMaker>DMS_RustWardenFaction</factionNameMaker>
+    <settlementNameMaker>DMS_RustWardenBase</settlementNameMaker>
     <techLevel>Industrial</techLevel>
     <hidden>false</hidden>
     <autoFlee>false</autoFlee>
     <canUseAvoidGrid>true</canUseAvoidGrid>
     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
     <permanentEnemyToEveryoneExcept>
-      <li>DMS_AutomatroidHiveMind</li>
+      <li>DMS_IronTide</li>
     </permanentEnemyToEveryoneExcept>
     <colorSpectrum>
       <li>(0.55, 0.30, 0.10)</li>
     </colorSpectrum>
+    <apparelStuffFilter>
+      <stuffCategoriesToAllow>
+        <li>Metallic</li>
+        <li>Fabric</li>
+      </stuffCategoriesToAllow>
+    </apparelStuffFilter>
+    <apparelRequired>
+      <li>DMS_Apparel_GarrisonCoat</li>
+      <li>DMS_Apparel_TacticalVest</li>
+    </apparelRequired>
+    <apparelTags>
+      <li>DMS_Garrison</li>
+      <li>DMS_Tactical</li>
+      <li>DMS_Armor</li>
+    </apparelTags>
     <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-    <settlementTexturePath>UI/Faction/RustCultSite</settlementTexturePath>
-
-    <backstoryFilters>
-      <li>
-        <categories>
-          <li>Mili_Standard</li>
-          <li>Civil_Expert</li>
-        </categories>
-      </li>
-    </backstoryFilters>
-
-    <maxPawnCostPerTotalPointsCurve>
-      <points>
-        <li>(35, 15)</li>
-        <li>(100, 120)</li>
-        <li>(1000, 500)</li>
-        <li>(2000, 800)</li>
-        <li>(4000, 1000)</li>
-      </points>
-    </maxPawnCostPerTotalPointsCurve>
+    <settlementTexturePath>UI/Faction/RustWardenSite</settlementTexturePath>
+    <fixedLeaderKinds>
+      <li>DMS_RustWarden_Warpriest</li>
+    </fixedLeaderKinds>
 
     <pawnGroupMakers>
-      <!-- Fanatic Raiders -->
+      <!-- Scav raiders -->
       <li>
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <DMS_RustCult_Fanatic>8</DMS_RustCult_Fanatic>
+          <DMS_RustWarden_Scav>8</DMS_RustWarden_Scav>
+          <DMS_RustWarden_Scav>5</DMS_RustWarden_Scav>
           <DMS_Mech_Soldat>3</DMS_Mech_Soldat>
-       
+        </options>
+      </li>
+      <!-- Augmented assault -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <DMS_RustWarden_Augmented>5</DMS_RustWarden_Augmented>
+          <DMS_RustWarden_Scav>4</DMS_RustWarden_Scav>
+          <DMS_Mech_Ronin>3</DMS_Mech_Ronin>
+          <DMS_Mech_Phalanx>4</DMS_Mech_Phalanx>
+        </options>
+      </li>
+      <!-- Warpriest-led crusade -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>20</commonality>
+        <options>
+          <DMS_RustWarden_Warpriest>1</DMS_RustWarden_Warpriest>
+          <DMS_RustWarden_Augmented>6</DMS_RustWarden_Augmented>
+          <DMS_RustWarden_Scav>8</DMS_RustWarden_Scav>
+          <DMS_Mech_Gladiator>4</DMS_Mech_Gladiator>
+          <DMS_Mech_Siegebreaker>2</DMS_Mech_Siegebreaker>
+        </options>
+      </li>
+      <!-- Scrap Titan assault -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <DMS_RustWarden_ScrapTitan>1</DMS_RustWarden_ScrapTitan>
+          <DMS_RustWarden_Warpriest>1</DMS_RustWarden_Warpriest>
+          <DMS_RustWarden_Augmented>4</DMS_RustWarden_Augmented>
+          <DMS_Mech_Iguana>2</DMS_Mech_Iguana>
+          <DMS_Mech_BattleFrame>5</DMS_Mech_BattleFrame>
+        </options>
+      </li>
+    </pawnGroupMakers>
+
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(500, 100)</li>
+        <li>(1000, 120)</li>
+        <li>(2000, 200)</li>
+        <li>(4000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <attackersDownPercentageRangeForAutoFlee>0.9</attackersDownPercentageRangeForAutoFlee>
+    <earliestRaidDays>15</earliestRaidDays>
+    <maxConfigurableAtWorldCreation>2</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>72</configurationListOrderPriority>
+    <disallowedRaidAgeRestrictions>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+    </disallowedRaidAgeRestrictions>
+  </FactionDef>
+</Defs>
