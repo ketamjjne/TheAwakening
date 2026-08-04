@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <PrefabDef>
+    <defName>DMS_Bunker_Base</defName>
+    <label>abandoned military bunker</label>
+    <size>(25,25)</size>
+    <things>
+      <!-- Bunker Walls -->
+      <Wall>
+        <rects>
+          <li>(2,2,2,22)</li>
+          <li>(3,2,3,2)</li>
+          <li>(3,22,3,22)</li>
+          <li>(22,2,22,22)</li>
+          <li>(21,2,21,2)</li>
+          <li>(21,22,21,22)</li>
+          <li>(4,2,20,2)</li>
+          <li>(4,22,20,22)</li>
+        </rects>
+        <stuff>Steel</stuff>
+        <colorDef>Structure_GreyDark</colorDef>
+      </Wall>
+      
+      <!-- Reinforced Walls (inner) -->
+      <Wall>
+        <rects>
+          <li>(5,4,5,20)</li>
+          <li>(6,4,6,4)</li>
+          <li>(6,20,6,20)</li>
+          <li>(19,4,19,20)</li>
+          <li>(18,4,18,4)</li>
+          <li>(18,20,18,20)</li>
+          <li>(7,4,17,4)</li>
+          <li>(7,20,17,20)</li>
+        </rects>
+        <stuff>Tungsteel</stuff>
+        <colorDef>Structure_GreyDark</colorDef>
+      </Wall>
+
+      <!-- Entrance Doors -->
+      <Door>
+        <position>(3,12)</position>
+        <stuff>Steel</stuff>
+      </Door>
+      
+      <!-- Inner Doors -->
+      <Autodoor>
+        <position>(6,12)</position>
+        <stuff>Steel</stuff>
+      </Autodoor>
+
+      <!-- Bunker Rooms -->
+      <!-- Living Quarters -->
+      <Bedroll>
+        <positions>
+          <li>(10,6)</li>
+          <li>(14,6)</li>
+          <li>(10,10)</li>
+        </positions>
+        <stuff>Leather_Bear</stuff>
+        <quality>Normal</quality>
+      </Bedroll>
+
+      <!-- Storage -->
+      <FT_Crate>
+        <positions>
+          <li>(16,6)</li>
+          <li>(16,8)</li>
+          <li>(16,10)</li>
+          <li>(16,12)</li>
+        </positions>
+        <stuff>Steel</stuff>
+      </FT_Crate>
+
+      <!-- Workbench -->
+      <FT_Workbench>
+        <position>(9,15)</position>
+        <stuff>Steel</stuff>
+      </FT_Workbench>
+
+      <!-- Research Station -->
+      <FT_ResearchStation>
+        <position>(15,15)</position>
+        <stuff>Steel</stuff>
+      </FT_ResearchStation>
+
+      <!-- Power -->
+      <FT_DieselGenerator>
+        <position>(13,15)</position>
+        <stuff>Steel</stuff>
+      </FT_DieselGenerator>
+
+      <!-- Sandbag Defenses -->
+      <FT_Sandbag>
+        <rects>
+          <li>(4,3,4,3)</li>
+          <li>(20,3,20,3)</li>
+          <li>(5,23,5,23)</li>
+          <li>(19,23,19,23)</li>
+        </rects>
+        <stuff>Cloth</stuff>
+      </FT_Sandbag>
+
+      <!-- Turret Points (empty mounts) -->
+      <FT_TurretMount>
+        <positions>
+          <li>(5,5)</li>
+          <li>(18,5)</li>
+        </positions>
+        <stuff>Steel</stuff>
+      </FT_TurretMount>
+
+      <!-- Emergency Supplies -->
+      <FT_AmmoBox>
+        <positions>
+          <li>(12,7)</li>
+          <li>(12,8)</li>
+        </positions>
+      </FT_AmmoBox>
+
+      <!-- Radio -->
+      <FT_RadioStation>
+        <position>(11,15)</position>
+        <stuff>Steel</stuff>
+      </FT_RadioStation>
+    </things>
+    
+    <terrain>
+      <!-- Concrete Floor -->
+      <Concrete>
+        <rects>
+          <li>(4,3,4,21)</li>
+          <li>(5,3,20,3)</li>
+          <li>(5,21,20,21)</li>
+          <li>(20,3,20,21)</li>
+        </rects>
+      </Concrete>
+      
+      <!-- Steel Tile Inside -->
+      <MetalTile>
+        <rects>
+          <li>(7,5,17,19)</li>
+        </rects>
+      </MetalTile>
+    </terrain>
+  </PrefabDef>
+</Defs>
