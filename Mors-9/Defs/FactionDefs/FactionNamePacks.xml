@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- =========================================== -->
+  <!-- HIVE MIND NAME GENERATORS                  -->
+  <!-- =========================================== -->
+  <RulePackDef>
+    <defName>DMS_HiveMindFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[Prefix] [Suffix]</li>
+        <li>r_name->[Prefix] Collective</li>
+        <li>r_name->[Prefix] Consciousness</li>
+
+        <li>Prefix->Primus</li>
+        <li>Prefix->Secundus</li>
+        <li>Prefix->Tertius</li>
+        <li>Prefix->Quartus</li>
+        <li>Prefix->Quintus</li>
+        <li>Prefix->Sextus</li>
+        <li>Prefix->Septimus</li>
+        <li>Prefix->Octavius</li>
+        <li>Prefix->Nonus</li>
+        <li>Prefix->Decimus</li>
+        <li>Prefix->Ferrum</li>
+        <li>Prefix->Acerbus</li>
+        <li>Prefix->Imperator</li>
+        <li>Prefix->Machina</li>
+        <li>Prefix->Automata</li>
+        <li>Prefix->Cogitus</li>
+        <li>Prefix->Dominus</li>
+        <li>Prefix->Fatum</li>
+        <li>Prefix->Havoc</li>
+        <li>Prefix->Cataclysm</li>
+        <li>Prefix->Annihilation</li>
+        <li>Prefix->Extinction</li>
+
+        <li>Suffix->Hive</li>
+        <li>Suffix->Core</li>
+        <li>Suffix->Mind</li>
+        <li>Suffix->Swarm</li>
+        <li>Suffix->Unity</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>DMS_HiveMindBase</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[Prefix] [Suffix]</li>
+
+        <li>Prefix->Maw of</li>
+        <li>Prefix->Forge of</li>
+        <li>Prefix->Core of</li>
+        <li>Prefix->Heart of</li>
+        <li>Prefix->Foundry of</li>
+        <li>Prefix->Anvil of</li>
+        <li>Prefix->Crucible of</li>
+        <li>Prefix->Eyes of</li>
+
+        <li>Suffix->Industry</li>
+        <li>Suffix->Annihilation</li>
+        <li>Suffix->Steel</li>
+        <li>Suffix->Iron</li>
+        <li>Suffix->Rust</li>
+        <li>Suffix->War</li>
+        <li>Suffix->Dominion</li>
+        <li>Suffix->Fury</li>
+        <li>Suffix->Wrath</li>
+        <li>Suffix->Ruin</li>
+        <li>Suffix->Desolation</li>
+        <li>Suffix->Extinction</li>
+        <li>Suffix->Judgment</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- =========================================== -->
+  <!-- RUST CULT NAME GENERATORS                  -->
+  <!-- =========================================== -->
+  <RulePackDef>
+    <defName>DMS_RustCultFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[Prefix] [Suffix]</li>
+        <li>r_name->The [Prefix] [Suffix]</li>
+
+        <li>Prefix->Rust</li>
+        <li>Prefix->Iron</li>
+        <li>Prefix->Scrap</li>
+        <li>Prefix->Cinder</li>
+        <li>Prefix->Ash</li>
+        <li>Prefix->Forge</li>
+        <li>Prefix->Anvil</li>
+        <li>Prefix->Ward</li>
+        <li>Prefix->Crusade</li>
+        <li>Prefix->Ascension</li>
+        <li>Prefix->Steel</li>
+        <li>Prefix->Machine</li>
+
+        <li>Suffix->Cult</li>
+        <li>Suffix->Covenant</li>
+        <li>Suffix->Legion</li>
+        <li>Suffix->Brotherhood</li>
+        <li>Suffix->Zealots</li>
+        <li>Suffix->Crusaders</li>
+        <li>Suffix->Ascendants</li>
+        <li>Suffix->Wardens</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>DMS_RustCultBase</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[Prefix] [Suffix]</li>
+
+        <li>Prefix->Scrap</li>
+        <li>Prefix->Rust</li>
+        <li>Prefix->Cinder</li>
+        <li>Prefix->Ash</li>
+        <li>Prefix->Forge</li>
+        <li>Prefix->Anvil</li>
+        <li>Prefix->Machine</li>
+        <li>Prefix->Steel</li>
+
+        <li>Suffix->Hold</li>
+        <li>Suffix->Keep</li>
+        <li>Suffix->Fortress</li>
+        <li>Suffix->Sanctum</li>
+        <li>Suffix->Shrine</li>
+        <li>Suffix->Temple</li>
+        <li>Suffix->Refuge</li>
+        <li>Suffix->Forge</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- =========================================== -->
+  <!-- AUTARCHS OF IRON NAME GENERATORS          -->
+  <!-- =========================================== -->
+  <RulePackDef>
+    <defName>DMS_AutarchFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[BrigadeNum0][BrigadeNum1][BrigadeNum2] [BrigadeType] Autarchy</li>
+
+        <li>BrigadeType->Iron</li>
+        <li>BrigadeType->Steel</li>
+        <li>BrigadeType->Imperial</li>
+        <li>BrigadeType->Autarch</li>
+        <li>BrigadeType->Fortress</li>
+
+        <li>BrigadeNum0->1</li>
+        <li>BrigadeNum0->2</li>
+        <li>BrigadeNum0->3</li>
+        <li>BrigadeNum0->4</li>
+        <li>BrigadeNum0->5</li>
+        <li>BrigadeNum0->6</li>
+        <li>BrigadeNum0->7</li>
+        <li>BrigadeNum0->8</li>
+        <li>BrigadeNum0->9</li>
+
+        <li>BrigadeNum1->0</li>
+        <li>BrigadeNum1->1</li>
+        <li>BrigadeNum1->2</li>
+        <li>BrigadeNum1->3</li>
+        <li>BrigadeNum1->4</li>
+        <li>BrigadeNum1->5</li>
+        <li>BrigadeNum1->6</li>
+        <li>BrigadeNum1->7</li>
+        <li>BrigadeNum1->8</li>
+        <li>BrigadeNum1->9</li>
+
+        <li>BrigadeNum2->0th</li>
+        <li>BrigadeNum2->1st</li>
+        <li>BrigadeNum2->2nd</li>
+        <li>BrigadeNum2->3rd</li>
+        <li>BrigadeNum2->4th</li>
+        <li>BrigadeNum2->5th</li>
+        <li>BrigadeNum2->6th</li>
+        <li>BrigadeNum2->7th</li>
+        <li>BrigadeNum2->8th</li>
+        <li>BrigadeNum2->9th</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- =========================================== -->
+  <!-- IRON WRAITHS NAME GENERATORS              -->
+  <!-- =========================================== -->
+  <RulePackDef>
+    <defName>DMS_WraithFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[Prefix] [Suffix]</li>
+        <li>r_name->The [Prefix] [Suffix]</li>
+
+        <li>Prefix->Iron</li>
+        <li>Prefix->Shadow</li>
+        <li>Prefix->Wraith</li>
+        <li>Prefix->Ghost</li>
+        <li>Prefix->Fury</li>
+        <li>Prefix->Death</li>
+        <li>Prefix->Steel</li>
+        <li>Prefix->Dark</li>
+
+        <li>Suffix->Wraiths</li>
+        <li>Suffix->Reavers</li>
+        <li>Suffix->Hounds</li>
+        <li>Suffix->Fangs</li>
+        <li>Suffix->Legion</li>
+        <li>Suffix->Cult</li>
+        <li>Suffix->Brigade</li>
+        <li>Suffix->Company</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- =========================================== -->
+  <!-- SCRAP-KIN NAME GENERATORS                 -->
+  <!-- =========================================== -->
+  <RulePackDef>
+    <defName>DMS_ScrapKinFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[Prefix] [Suffix]</li>
+        <li>r_name->[Prefix] Clan</li>
+
+        <li>Prefix->Scrap</li>
+        <li>Prefix->Rust</li>
+        <li>Prefix->Ash</li>
+        <li>Prefix->Cinder</li>
+        <li>Prefix->Steel</li>
+        <li>Prefix->Iron</li>
+        <li>Prefix->Copper</li>
+        <li>Prefix->Tin</li>
+
+        <li>Suffix->Kin</li>
+        <li>Suffix->Clan</li>
+        <li>Suffix->Tribe</li>
+        <li>Suffix->Brood</li>
+        <li>Suffix->Horde</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

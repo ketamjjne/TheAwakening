@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- =========================================== -->
+  <!-- RUST CULT PAWN KINDS                      -->
+  <!-- =========================================== -->
+
+  <!-- Rust Cult Fanatic -->
+  <PawnKindDef ParentName="DMS_CivilianBase">
+    <defName>DMS_RustCult_Fanatic</defName>
+    <label>rust fanatic</label>
+    <labelPlural>rust fanatics</labelPlural>
+    <combatPower>55</combatPower>
+    <isFighter>true</isFighter>
+    <apparelRequired>
+      <li>DMS_Apparel_GarrisonCoat</li>
+      <li>DMS_Apparel_GarrisonCap</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>DMS_SurvivalRifle</li>
+      <li>DMS_KnuckledusterRevolver</li>
+      <li>DMS_StunBaton</li>
+    </weaponTags>
+    <weaponMoney>150~300</weaponMoney>
+    <apparelMoney>100~300</apparelMoney>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(0.55, 0.30, 0.10)</only>
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+  <!-- Rust Cult Augmented -->
+  <PawnKindDef ParentName="DMS_SoldierBase">
+    <defName>DMS_RustCult_Augmented</defName>
+    <label>rust augmented</label>
+    <labelPlural>rust augmented</labelPlural>
+    <combatPower>120</combatPower>
+    <isFighter>true</isFighter>
+    <apparelRequired>
+      <li>DMS_Apparel_TacticalHelmet</li>
+      <li>DMS_Apparel_TacticalVest</li>

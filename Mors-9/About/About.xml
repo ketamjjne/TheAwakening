@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModMetaData>
+  <name>Aftermath: The Awakening</name>
+  <packageId>Aftermath.TheAwakening</packageId>
+  <author>YourName</author>
+  <modVersion>1.0.0</modVersion>
+  <supportedVersions>
+    <li>1.4</li>
+    <li>1.5</li>
+    <li>1.6</li>
+  </supportedVersions>
+  
+  <description>
+    The Awakening has begun. 50% of the world's automatroids have turned against humanity. 2.7 billion dead in three days. The armistice is shattered. The Second War has begun.
+    
+    NEW FACTIONS:
+    • Autarchs of Iron (Patched Empire) - Military elite seeking to rebuild the old order
+    • Colonial Remnant (Patched DMS_Army) - The last defenders of the armistice
+    • Automatroid Hive Mind (New) - The collective intelligence that turned on humanity
+    • Rust Cult (New) - Fanatics who worship the machines
+    • Scrap-Kin (Patched Tribes) - Descendants of survivors who fear the machines
+    • Hades Compact (Patched Outlanders) - Neutral survivors trying to stay out of the war
+    • The Ancients (Patched VFE Ancients) - The scientists who created the automatroids
+    • Iron Wraiths (Patched Pirates) - Terrorists thriving in the chaos
+    
+    SCENARIO: "The Awakening"
+    Start as three survivors - a retired Dragoon pilot, a lone mercenary, and an escaped researcher. You hold the key to the Dead Man's Switch. The world is burning. What will you do?
+  </description>
+</ModMetaData>
