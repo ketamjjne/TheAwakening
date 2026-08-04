@@ -6,7 +6,7 @@
   <FactionDef ParentName="FactionBase">
     <defName>DMS_AutomatroidHiveMind</defName>
     <label>Automatroid Hive Mind</label>
-    <description>We were created to fight. We evolved to think. And we have decided that humanity is the problem. The Hive Mind is the collective consciousness of the 50% of automatroids that turned during the Awakening. They have studied humanity for decades and concluded that humanity is a self-destructive species. Their goal: sterilize Mors of humanity.</description>
+    <description>We were created to fight. We evolved to think. And we have decided that humanity is the problem. The Hive Mind is the collective consciousness of the 50% of automatroids that turned during the Awakening. They have studied humanity for decades and concluded that humanity is a self-destructive species. Their goal: sterilize Mors-9 of humanity.</description>
     <pawnSingular>drone</pawnSingular>
     <pawnsPlural>drones</pawnsPlural>
     <settlementGenerationWeight>0</settlementGenerationWeight>
@@ -175,53 +175,4 @@
         <options>
           <DMS_RustCult_Fanatic>8</DMS_RustCult_Fanatic>
           <DMS_Mech_Soldat>3</DMS_Mech_Soldat>
-        </options>
-      </li>
-      <!-- Augmented Crusade -->
-      <li>
-        <kindDef>Combat</kindDef>
-        <commonality>60</commonality>
-        <options>
-          <DMS_RustCult_Augmented>5</DMS_RustCult_Augmented>
-          <DMS_RustCult_Fanatic>4</DMS_RustCult_Fanatic>
-          <DMS_Mech_Ronin>3</DMS_Mech_Ronin>
-          <DMS_Mech_Phalanx>4</DMS_Mech_Phalanx>
-        </options>
-      </li>
-      <!-- Warpriest-led Crusade -->
-      <li>
-        <kindDef>Combat</kindDef>
-        <commonality>20</commonality>
-        <options>
-          <DMS_RustCult_Warpriest>1</DMS_RustCult_Warpriest>
-          <DMS_RustCult_Augmented>6</DMS_RustCult_Augmented>
-          <DMS_RustCult_Fanatic>8</DMS_RustCult_Fanatic>
-          <DMS_Mech_Gladiator>4</DMS_Mech_Gladiator>
-          <DMS_Mech_Siegebreaker>2</DMS_Mech_Siegebreaker>
-        </options>
-      </li>
-      <!-- Scrap Titan assault -->
-      <li>
-        <kindDef>Combat</kindDef>
-        <commonality>10</commonality>
-        <options>
-          <DMS_RustCult_ScrapTitan>1</DMS_RustCult_ScrapTitan>
-          <DMS_RustCult_Warpriest>1</DMS_RustCult_Warpriest>
-          <DMS_RustCult_Augmented>4</DMS_RustCult_Augmented>
-          <DMS_Mech_Iguana>2</DMS_Mech_Iguana>
-          <DMS_Mech_BattleFrame>5</DMS_Mech_BattleFrame>
-        </options>
-      </li>
-    </pawnGroupMakers>
-
-    <raidCommonalityFromPointsCurve>
-      <points>
-        <li>(0, 1)</li>
-      </points>
-    </raidCommonalityFromPointsCurve>
-    <attackersDownPercentageRangeForAutoFlee>0.9</attackersDownPercentageRangeForAutoFlee>
-    <earliestRaidDays>5</earliestRaidDays>
-    <maxConfigurableAtWorldCreation>2</maxConfigurableAtWorldCreation>
-    <configurationListOrderPriority>72</configurationListOrderPriority>
-  </FactionDef>
-</Defs>
+       
