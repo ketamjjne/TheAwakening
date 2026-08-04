@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ModMetaData>
-  <name>Aftermath: The Awakening</name>
-  <packageId>Aftermath.TheAwakening</packageId>
+  <name>Mors-9: The Awakening</name>
+  <packageId>Mors9.TheAwakening</packageId>
   <author>YourName</author>
   <modVersion>1.0.0</modVersion>
   <supportedVersions>
@@ -10,6 +10,35 @@
     <li>1.6</li>
   </supportedVersions>
   
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>Aoba.DeadManSwitch.Core</packageId>
+      <displayName>The Dead Man's Switch</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=3498575851</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>AOBA.Framework</packageId>
+      <displayName>Fortified Feature Framework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3498575851</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>Aoba.Fortress.Industrial</packageId>
+      <displayName>Fortifications - Industrial</displayName>
+    </li>
+  </modDependencies>
+
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Aoba.DeadManSwitch.Core</li>
+    <li>AOBA.Framework</li>
+    <li>Aoba.Fortress.Industrial</li>
+  </loadAfter>
+
   <description>
     The Awakening has begun. 50% of the world's automatroids have turned against humanity. 2.7 billion dead in three days. The armistice is shattered. The Second War has begun.
     
@@ -24,6 +53,6 @@
     • Iron Wraiths (Patched Pirates) - Terrorists thriving in the chaos
     
     SCENARIO: "The Awakening"
-    Start as three survivors - a retired Dragoon pilot, a lone mercenary, and an escaped researcher. You hold the key to the Dead Man's Switch. The world is burning. What will you do?
+    Start as three survivors in an abandoned bunker. You hold the key to the Dead Man's Switch. The world is burning. What will you do?
   </description>
 </ModMetaData>
