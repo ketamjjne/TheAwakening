@@ -82,7 +82,6 @@
     <combatPower>180</combatPower>
     <isFighter>true</isFighter>
     <apparelRequired>
-      <li>DMS_Apparel_ArrayHelmet</li>
       <li>DMS_Apparel_TacticalVest</li>
       <li>DMS_Apparel_BionicSuit</li>
       <li>DMS_Apparel_TacticalCloak</li>
@@ -283,7 +282,7 @@
     <combatPower>40</combatPower>
     <isFighter>false</isFighter>
     <apparelRequired>
-      <li>DMS_Apparel_UnitSuit</li>
+      <li>DMS_Apparel_BionicSuit</li>
     </apparelRequired>
     <weaponTags>
       <li>DMS_TacticalPistol</li>
