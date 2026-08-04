@@ -47,9 +47,6 @@
       <li>DMS_Apparel_TacticalVest</li>
       <li>DMS_Apparel_GarrisonCoat</li>
     </apparelRequired>
-    <apparelDisallowed>
-      <li>DMS_Apparel_UnitSuit</li>
-    </apparelDisallowed>
     <weaponTags>
       <li>DMS_AssaultRifle</li>
       <li>DMS_AssaultShotgun</li>
@@ -90,10 +87,6 @@
       <li>DMS_Apparel_BionicSuit</li>
       <li>DMS_Apparel_TacticalCloak</li>
     </apparelRequired>
-    <apparelDisallowed>
-      <li>DMS_Apparel_UnitSuit</li>
-      <li>DMS_Apparel_ArmyCap</li>
-    </apparelDisallowed>
     <weaponTags>
       <li>DMS_MarksmanRifle</li>
       <li>DMS_AntiMaterialRifle</li>
@@ -185,9 +178,6 @@
       <li>DMS_Apparel_TacticalVest</li>
       <li>DMS_Apparel_BionicSuit</li>
     </apparelRequired>
-    <apparelDisallowed>
-      <li>DMS_Apparel_UnitSuit</li>
-    </apparelDisallowed>
     <weaponTags>
       <li>DMS_AssaultRifle</li>
       <li>DMS_TacticalPistol</li>
@@ -243,9 +233,6 @@
       <li>DMS_Apparel_TacticalHelmet</li>
       <li>DMS_Apparel_TacticalVest</li>
     </apparelRequired>
-    <apparelDisallowed>
-      <li>DMS_Apparel_UnitSuit</li>
-    </apparelDisallowed>
     <weaponTags>
       <li>DMS_AssaultRifle</li>
       <li>DMS_SurvivalRifle</li>
