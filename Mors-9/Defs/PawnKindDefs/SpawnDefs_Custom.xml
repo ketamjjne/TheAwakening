@@ -45,3 +45,375 @@
     <apparelRequired>
       <li>DMS_Apparel_TacticalHelmet</li>
       <li>DMS_Apparel_TacticalVest</li>
+      <li>DMS_Apparel_GarrisonCoat</li>
+    </apparelRequired>
+    <apparelDisallowed>
+      <li>DMS_Apparel_UnitSuit</li>
+    </apparelDisallowed>
+    <weaponTags>
+      <li>DMS_AssaultRifle</li>
+      <li>DMS_AssaultShotgun</li>
+      <li>DMS_BattleRifle</li>
+      <li>DMS_Machete</li>
+    </weaponTags>
+    <weaponMoney>400~800</weaponMoney>
+    <apparelMoney>400~800</apparelMoney>
+    <techHediffsChance>0.7</techHediffsChance>
+    <techHediffsMoney>1500~3000</techHediffsMoney>
+    <techHediffsTags>
+      <li>DMS_BM_Bionic</li>
+      <li>Simple</li>
+    </techHediffsTags>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(0.55, 0.30, 0.10)</only>
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+  <!-- Rust Cult Warpriest -->
+  <PawnKindDef ParentName="DMS_OfficerBase">
+    <defName>DMS_RustCult_Warpriest</defName>
+    <label>rust warpriest</label>
+    <labelPlural>rust warpriests</labelPlural>
+    <combatPower>180</combatPower>
+    <isFighter>true</isFighter>
+    <apparelRequired>
+      <li>DMS_Apparel_ArrayHelmet</li>
+      <li>DMS_Apparel_TacticalVest</li>
+      <li>DMS_Apparel_BionicSuit</li>
+      <li>DMS_Apparel_TacticalCloak</li>
+    </apparelRequired>
+    <apparelDisallowed>
+      <li>DMS_Apparel_UnitSuit</li>
+      <li>DMS_Apparel_ArmyCap</li>
+    </apparelDisallowed>
+    <weaponTags>
+      <li>DMS_MarksmanRifle</li>
+      <li>DMS_AntiMaterialRifle</li>
+      <li>DMS_Machete</li>
+    </weaponTags>
+    <weaponMoney>800~1500</weaponMoney>
+    <apparelMoney>800~1500</apparelMoney>
+    <forceWeaponQuality>Masterwork</forceWeaponQuality>
+    <techHediffsChance>1.0</techHediffsChance>
+    <techHediffsMoney>2000~5000</techHediffsMoney>
+    <techHediffsTags>
+      <li>DMS_BM_Bionic</li>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsRequired>
+      <li>DMS_ProstheticEye</li>
+      <li>DMS_SyntheticArm</li>
+      <li>DMS_SyntheticLeg</li>
+    </techHediffsRequired>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(0.55, 0.30, 0.10)</only>
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+  <!-- Rust Cult Scrap Titan -->
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_RustCult_ScrapTitan</defName>
+    <label>rust scrap titan</label>
+    <race>DMS_Mech_BattleFrame</race>
+    <isFighter>true</isFighter>
+    <combatPower>300</combatPower>
+    <maxPerGroup>2</maxPerGroup>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/battleFrame</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+          <color>(0.55, 0.30, 0.10)</color>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/battleFrame</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.75</drawSize>
+          <color>(0.55, 0.30, 0.10)</color>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+      <li>A_MG_Light</li>
+      <li>DMS_MechWeaponLight</li>
+      <li>DMS_MechWeaponTransHeavy</li>
+    </weaponTags>
+    <abilities>
+      <li>DMS_RepairMode</li>
+    </abilities>
+    <modExtensions>
+      <li Class="Fortified.DefaultTilteFactionExtension">
+        <faction>DMS_RustCult</faction>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <!-- =========================================== -->
+  <!-- SCENARIO PAWN KINDS                        -->
+  <!-- =========================================== -->
+
+  <!-- Retired Dragoon Pilot -->
+  <PawnKindDef ParentName="DMS_SoldierBase">
+    <defName>DMS_Dragoon_Pilot</defName>
+    <label>dragoon pilot</label>
+    <labelPlural>dragoon pilots</labelPlural>
+    <combatPower>150</combatPower>
+    <isFighter>true</isFighter>
+    <apparelRequired>
+      <li>DMS_Apparel_TacticalHelmet</li>
+      <li>DMS_Apparel_TacticalVest</li>
+      <li>DMS_Apparel_BionicSuit</li>
+    </apparelRequired>
+    <apparelDisallowed>
+      <li>DMS_Apparel_UnitSuit</li>
+    </apparelDisallowed>
+    <weaponTags>
+      <li>DMS_AssaultRifle</li>
+      <li>DMS_TacticalPistol</li>
+    </weaponTags>
+    <weaponMoney>800~1200</weaponMoney>
+    <apparelMoney>800~1200</apparelMoney>
+    <forceWeaponQuality>Excellent</forceWeaponQuality>
+    <techHediffsChance>0.8</techHediffsChance>
+    <techHediffsMoney>2000~4000</techHediffsMoney>
+    <techHediffsTags>
+      <li>DMS_BM_Bionic</li>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsRequired>
+      <li>DMS_ProstheticEye</li>
+      <li>DMS_SyntheticArm</li>
+    </techHediffsRequired>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>12~18</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>10~14</range>
+      </li>
+      <li>
+        <skill>Crafting</skill>
+        <range>8~12</range>
+      </li>
+    </skills>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(0.3, 0.4, 0.3)</only>
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+  <!-- Lone Mercenary -->
+  <PawnKindDef ParentName="DMS_SoldierBase">
+    <defName>DMS_Mercenary</defName>
+    <label>mercenary</label>
+    <labelPlural>mercenaries</labelPlural>
+    <combatPower>120</combatPower>
+    <isFighter>true</isFighter>
+    <apparelRequired>
+      <li>DMS_Apparel_TacticalHelmet</li>
+      <li>DMS_Apparel_TacticalVest</li>
+    </apparelRequired>
+    <apparelDisallowed>
+      <li>DMS_Apparel_UnitSuit</li>
+    </apparelDisallowed>
+    <weaponTags>
+      <li>DMS_AssaultRifle</li>
+      <li>DMS_SurvivalRifle</li>
+      <li>DMS_TacticalPistol</li>
+      <li>DMS_Machete</li>
+    </weaponTags>
+    <weaponMoney>600~1000</weaponMoney>
+    <apparelMoney>600~1000</apparelMoney>
+    <forceWeaponQuality>Normal</forceWeaponQuality>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~16</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>12~16</range>
+      </li>
+      <li>
+        <skill>Social</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(0.3, 0.3, 0.3)</only>
+            </li>
+            <li>
+              <only>(0.4, 0.3, 0.2)</only>
+            </li>
+            <li>
+              <only>(0.2, 0.3, 0.3)</only>
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+  <!-- Escaped Researcher -->
+  <PawnKindDef ParentName="DMS_CivilianBase">
+    <defName>DMS_Researcher</defName>
+    <label>researcher</label>
+    <labelPlural>researchers</labelPlural>
+    <combatPower>40</combatPower>
+    <isFighter>false</isFighter>
+    <apparelRequired>
+      <li>DMS_Apparel_UnitSuit</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>DMS_TacticalPistol</li>
+    </weaponTags>
+    <weaponMoney>200~400</weaponMoney>
+    <apparelMoney>200~400</apparelMoney>
+    <skills>
+      <li>
+        <skill>Intellectual</skill>
+        <range>14~20</range>
+      </li>
+      <li>
+        <skill>Medicine</skill>
+        <range>10~16</range>
+      </li>
+      <li>
+        <skill>Crafting</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(0.7, 0.7, 0.7)</only>
+            </li>
+            <li>
+              <only>(0.6, 0.6, 0.6)</only>
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+  <!-- Damaged Dragoon Mech -->
+  <PawnKindDef ParentName="BaseAutomatroidKind">
+    <defName>DMS_Dragoon_Damaged</defName>
+    <label>damaged dragoon</label>
+    <race>DMS_Mech_Tarbosaurus</race>
+    <isFighter>true</isFighter>
+    <combatPower>400</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/tarbosaurus</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4</drawSize>
+          <color>(0.7, 0.7, 0.7)</color>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Automatroid/OldTexture/tarbosaurus</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4</drawSize>
+          <color>(0.7, 0.7, 0.7)</color>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+      <li>DMS_MechWeaponUltraHeavy</li>
+    </weaponTags>
+    <abilities>
+      <li>DMS_TarbosaurusJump</li>
+    </abilities>
+  </PawnKindDef>
+
+  <!-- =========================================== -->
+  <!-- CUSTOM ITEMS FOR SCENARIO                  -->
+  <!-- =========================================== -->
+
+  <!-- Dead Man's Switch Data -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>DMS_DeadManSwitchData</defName>
+    <label>Dead Man's Switch data</label>
+    <description>A heavily encrypted data chip containing the activation codes for the Dead Man's Switch. The researcher who escaped with it claims it could shut down the Hive Mind - or destroy it entirely.</description>
+    <graphicData>
+      <texPath>Things/Resource/DMS_Book/Schematic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>9999</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <stackLimit>1</stackLimit>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <tradeability>None</tradeability>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+  </ThingDef>
+
+  <!-- Researcher Notes -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>DMS_ResearcherNotes</defName>
+    <label>researcher's notes</label>
+    <description>A partially burned journal belonging to the escaped researcher. It contains personal accounts of the automatroid project, the hidden hive mind, and the researcher's guilt.</description>
+    <graphicData>
+      <texPath>Things/Resource/DMS_Book/Schematic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <Mass>0.2</Mass>
+    </statBases>
+    <stackLimit>1</stackLimit>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <tradeability>None</tradeability>
+  </ThingDef>
+</Defs>
