@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- 弹药背包模块 - 物品形态 (80kg) -->
+  <ThingDef ParentName="ModuleItemAttachment">
+    <defName>MF_Module_AmmoBackpack</defName>
+    <label>ammo backpack module</label>
+    <description>A belt-fed ammunition backpack that connects to compatible weapons, providing continuous ammo supply without manual reloading. Not compatible with rockets, missiles, or grenades.</description>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>8</Mass>
+      <MarketValue>800</MarketValue>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Cloth>30</Cloth>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>WG_HeavyExoskeleton</researchPrerequisite>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="Exosuit.CompProperties_ExosuitModule">
+        <EquipedThingDef>MF_Apparel_AmmoBackpack</EquipedThingDef>
+        <ItemDef>MF_Module_AmmoBackpack</ItemDef>
+        <occupiedSlots>
+          <li>Attachment</li>
+        </occupiedSlots>
+      </li>
+      <li Class="Exosuit.CE.CompProperties_AmmoBackpack">
+        <totalMassCapacity>80</totalMassCapacity>
+        <baseReloadTicks>180</baseReloadTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- 重型弹药背包模块 - 物品形态 (160kg，占据右肩+背挂) -->
+  <ThingDef ParentName="ModuleItemAttachment">
+    <defName>MF_Module_AmmoBackpack_Heavy</defName>
+    <label>heavy ammo backpack module</label>
+    <description>A large belt-fed ammunition backpack with double capacity. Occupies both the attachment slot and right shoulder mount. Not compatible with rockets, missiles, or grenades.</description>
+    <graphicData>
+      <texPath>Things/Item/Module_A</texPath>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>14</Mass>
+      <MarketValue>1400</MarketValue>
+      <WorkToMake>18000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>140</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <Cloth>50</Cloth>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>WG_HeavyExoskeleton</researchPrerequisite>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="Exosuit.CompProperties_ExosuitModule">
+        <EquipedThingDef>MF_Apparel_AmmoBackpack_Heavy</EquipedThingDef>
+        <ItemDef>MF_Module_AmmoBackpack_Heavy</ItemDef>
+        <occupiedSlots>
+          <li>Attachment</li>
+          <li>MountRight</li>
+        </occupiedSlots>
+      </li>
+      <li Class="Exosuit.CE.CompProperties_AmmoBackpack">
+        <totalMassCapacity>160</totalMassCapacity>
+        <baseReloadTicks>240</baseReloadTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- 轻量化弹药匣模块 - 物品形态 (40kg，占据左手) -->
+  <ThingDef ParentName="ModuleItemArmLeft">
+    <defName>MF_Module_AmmoBackpack_Light</defName>
+    <label>compact ammo box module</label>
+    <description>A lightweight ammunition box mounted on the left arm. Smaller capacity but leaves the backpack slot free. Not compatible with rockets, missiles, or grenades.</description>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>4</Mass>
+      <MarketValue>500</MarketValue>
+      <WorkToMake>8000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Cloth>15</Cloth>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>WG_HeavyExoskeleton</researchPrerequisite>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="Exosuit.CompProperties_ExosuitModule">
+        <EquipedThingDef>MF_Apparel_AmmoBackpack_Light</EquipedThingDef>
+        <ItemDef>MF_Module_AmmoBackpack_Light</ItemDef>
+        <occupiedSlots>
+          <li>ArmLeft</li>
+        </occupiedSlots>
+      </li>
+      <li Class="Exosuit.CE.CompProperties_AmmoBackpack">
+        <totalMassCapacity>40</totalMassCapacity>
+        <baseReloadTicks>120</baseReloadTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- 弹药背包模块 - 装甲形态 (80kg) -->
+  <ThingDef ParentName="ModuleApparelAttachment">
+    <defName>MF_Apparel_AmmoBackpack</defName>
+    <label>ammo backpack</label>
+    <description>A belt-fed ammunition backpack module installed on an exosuit.</description>
+    <graphicData>
+      <texPath>Things/Item/Module_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.2</ArmorRating_Heat>
+      <Mass>8</Mass>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="Exosuit.CompProperties_ExosuitModule">
+        <EquipedThingDef>MF_Apparel_AmmoBackpack</EquipedThingDef>
+        <ItemDef>MF_Module_AmmoBackpack</ItemDef>
+        <occupiedSlots>
+          <li>Attachment</li>
+        </occupiedSlots>
+      </li>
+      <li Class="Exosuit.CE.CompProperties_AmmoBackpack">
+        <totalMassCapacity>80</totalMassCapacity>
+        <baseReloadTicks>180</baseReloadTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- 重型弹药背包模块 - 装甲形态 (160kg) -->
+  <ThingDef ParentName="ModuleApparelAttachment">
+    <defName>MF_Apparel_AmmoBackpack_Heavy</defName>
+    <label>heavy ammo backpack</label>
+    <description>A large belt-fed ammunition backpack module with double capacity.</description>
+    <graphicData>
+      <texPath>Things/AmmoDrum/apparel_north</texPath>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Mass>14</Mass>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <tickerType>Normal</tickerType>
+	<apparel>
+      <wornGraphicPath>Things/AmmoDrum/apparel</wornGraphicPath>
+      <drawData>
+        <scale>1.3</scale>
+        <dataSouth>
+          <layer>-2</layer>
+          <offset>(0,0,0.5)</offset>
+        </dataSouth>
+        <dataEast>
+          <layer>5</layer>
+          <offset>(-0.75,0,0.7)</offset>
+		  <rotationOffset>60</rotationOffset>
+        </dataEast>
+        <dataWest>
+          <layer>5</layer>
+          <offset>(0.75,0,0.7)</offset>
+		  <rotationOffset>-60</rotationOffset>
+        </dataWest>
+        <dataNorth>
+          <layer>10</layer>
+          <offset>(0,0,0.5)</offset>
+        </dataNorth>
+      </drawData>
+    </apparel>
+    <comps>
+      <li Class="Exosuit.CompProperties_ExosuitModule">
+        <EquipedThingDef>MF_Apparel_AmmoBackpack_Heavy</EquipedThingDef>
+        <ItemDef>MF_Module_AmmoBackpack_Heavy</ItemDef>
+        <occupiedSlots>
+          <li>Attachment</li>
+          <li>MountRight</li>
+        </occupiedSlots>
+      </li>
+      <li Class="Exosuit.CE.CompProperties_AmmoBackpack">
+        <totalMassCapacity>160</totalMassCapacity>
+        <baseReloadTicks>240</baseReloadTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- 轻量化弹药匣模块 - 装甲形态 (40kg) -->
+  <ThingDef ParentName="ModuleApparelArmLeft">
+    <defName>MF_Apparel_AmmoBackpack_Light</defName>
+    <label>compact ammo box</label>
+    <description>A lightweight ammunition box mounted on the left arm.</description>
+    <graphicData>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ammobox/apparel_south</texPath>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.15</ArmorRating_Heat>
+      <Mass>4</Mass>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <tickerType>Normal</tickerType>
+	<apparel>
+      <wornGraphicPath>Things/Ammobox/apparel</wornGraphicPath>
+      <drawData>
+        <scale>1.2</scale>
+        <dataSouth>
+          <offset>(0.65,0,0.05)</offset>
+        </dataSouth>
+        <dataNorth>
+          <offset>(-0.60,0,0.15)</offset>
+          <layer>0</layer>
+        </dataNorth>
+        <dataWest>
+          <offset>(0.0,0,-0.1)</offset>
+          <layer>64</layer>
+        </dataWest>
+        <dataEast>
+          <offset>(0.4,0,0.35)</offset>
+          <layer>-1</layer>
+        </dataEast>
+      </drawData>
+	  <!--<renderNodeProperties>
+		<li>
+			<nodeClass>WalkerGear.PawnRenderNode_ApparelColor</nodeClass>
+            <shaderTypeDef>CutoutComplex</shaderTypeDef>
+            <workerClass>PawnRenderNodeWorker</workerClass>
+            <parentTagDef>WGApparelBody</parentTagDef>
+            <baseLayer>30</baseLayer>
+            <drawSize>1.3</drawSize>
+            <pawnType>Any</pawnType>
+            <useGraphic>true</useGraphic>
+			<texPath>Things/Ammobox/apparel</texPath>
+		  <drawData>
+			<dataSouth>
+			  <offset>(0.65,0,0.05)</offset>
+			</dataSouth>
+			<dataNorth>
+			  <offset>(-0.60,0,0.15)</offset>
+			  <layer>0</layer>
+			</dataNorth>
+			<dataWest>
+			  <offset>(0.0,0,-0.1)</offset>
+			  <layer>64</layer>
+			</dataWest>
+			<dataEast>
+			  <offset>(0.4,0,0.35)</offset>
+			  <layer>-1</layer>
+			</dataEast>
+		  </drawData>
+		</li>
+	  </renderNodeProperties>-->
+    </apparel>
+    <comps>
+      <li Class="Exosuit.CompProperties_ExosuitModule">
+        <EquipedThingDef>MF_Apparel_AmmoBackpack_Light</EquipedThingDef>
+        <ItemDef>MF_Module_AmmoBackpack_Light</ItemDef>
+        <occupiedSlots>
+          <li>ArmLeft</li>
+        </occupiedSlots>
+      </li>
+      <li Class="Exosuit.CE.CompProperties_AmmoBackpack">
+        <totalMassCapacity>40</totalMassCapacity>
+        <baseReloadTicks>120</baseReloadTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

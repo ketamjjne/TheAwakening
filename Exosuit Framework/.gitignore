@@ -1,0 +1,16 @@
+/.vs
+/.vscode
+/.source/bin
+/.source/obj
+/.source/.vs
+/.source/CE/obj
+/.source/CE/bin
+*.cache
+*.editorconfig
+*.props
+*.json
+*.bin
+*.db
+*.v2
+*.user
+*.DotSettings*

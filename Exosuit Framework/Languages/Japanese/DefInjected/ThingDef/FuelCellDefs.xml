@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <MF_Module_FuelCell.label>燃料電池モジュール</MF_Module_FuelCell.label>
+  <MF_Module_FuelCell.description>外骨格システムに追加電力を供給する大容量燃料電池です。化学燃料を補給すると、操縦者の移動速度と作業効率が向上します。燃料が入っている状態で装着すると自動的に作動します。</MF_Module_FuelCell.description>
+
+  <MF_Apparel_FuelCell.label>燃料電池モジュール</MF_Apparel_FuelCell.label>
+  <MF_Apparel_FuelCell.description>外骨格システムに追加電力を供給する大容量燃料電池です。</MF_Apparel_FuelCell.description>
+
+</LanguageData>

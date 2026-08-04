@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- 判斷Har種族是否有服裝白名單，有白名單時將裝備加進去，使其能正常使用，不會直接消失。 -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[.]/alienRace/raceRestriction/whiteApparelList</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[.]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+				<li>MF_Apparel_FuelCell</li>
+				<li MayRequire="ceteam.combatextended">MF_Apparel_AmmoBackpack_Heavy</li>
+				<li MayRequire="ceteam.combatextended">MF_Apparel_AmmoBackpack</li>
+				<li MayRequire="ceteam.combatextended">MF_Apparel_AmmoBackpack_Light</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

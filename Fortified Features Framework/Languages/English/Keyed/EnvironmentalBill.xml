@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <FFF.Message.BillSuspended>{0} on {1} were suspended</FFF.Message.BillSuspended>
+
+  <FFF.Cannot.TableNotInCleanRoom>require dust-free environment with a cleanliness level higher than {1}. Current: {0}</FFF.Cannot.TableNotInCleanRoom>
+  <FFF.Cannot.TableNotInTemperatureBetween>require temperature environment between {1} and {2}. Current: {0}</FFF.Cannot.TableNotInTemperatureBetween>
+
+  <FFF.Cannot.TableNotInLightnessBetween>require light environment between {1} and {2}. Current: {0}</FFF.Cannot.TableNotInLightnessBetween>
+  <FFF.Cannot.TableNotInLightness>require bright environment with light level higher than {1}. Current: {0}</FFF.Cannot.TableNotInLightness>
+  <FFF.Cannot.TableNotInDarkness>require dark environment with light level lower than {1}. Current: {0}</FFF.Cannot.TableNotInDarkness>
+
+  <FFF.Cannot.TableNotInPressureBetween>require pressurized environment with a vacuum between {1} and {2}. Current: {0}</FFF.Cannot.TableNotInPressureBetween>
+  <FFF.Cannot.TableNotInPressure>require pressurized environment with vacuum rate lower than {1}. Current: {0}</FFF.Cannot.TableNotInPressure>
+  <FFF.Cannot.TableNotInVacuum>require low-pressure environment with vacuum rate higher than {1}. Current: {0}</FFF.Cannot.TableNotInVacuum>
+
+  <FFF.Cannot.TableNotInMicroGravity>require in a microgravity environment.</FFF.Cannot.TableNotInMicroGravity>
+
+  <FFF.EnvironmentRestriction>required environment</FFF.EnvironmentRestriction>
+
+  <FFF.CleanRoom>Indoor cleanliness above: {0}</FFF.CleanRoom>
+  <FFF.Temperature>Indoor temperature between: {0} ~ {1}</FFF.Temperature>
+
+  <FFF.LightnessDarkness>indoor brightness between: {0} ~ {1}</FFF.LightnessDarkness>
+  <FFF.Lightness>Indoor brightness above: {0}</FFF.Lightness>
+  <FFF.Darkness>Indoor brightness below: {0}</FFF.Darkness>
+
+  <FFF.PressureVacuum>Vacuum between: {0} ~ {1}</FFF.PressureVacuum>
+  <FFF.Pressure>Vacuum below: {0}</FFF.Pressure>
+  <FFF.Vacuum>Vacuum above: {0}</FFF.Vacuum>
+
+  <FFF.MicroGravity>Microgravity</FFF.MicroGravity>
+
+  <!-- Used in ModExt_EnvironmentalBill.ValidateBillOnce with pressure percentage arg -->
+  <FFF.PressureRestriction>Requires pressure: {0}</FFF.PressureRestriction>
+
+</LanguageData>

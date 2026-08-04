@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <MF_Module_FuelCell.label>燃料電池模塊</MF_Module_FuelCell.label>
+  <MF_Module_FuelCell.description>一個高容量燃料電池，為外骨骼系統提供額外動力。當裝填化學燃料時，可提升駕駛員的移動速度與工作效率。燃料電池在安裝且有燃料時會自動啟動。</MF_Module_FuelCell.description>
+
+  <MF_Apparel_FuelCell.label>燃料電池模塊</MF_Apparel_FuelCell.label>
+  <MF_Apparel_FuelCell.description>一個高容量燃料電池，為外骨骼系統提供額外動力。</MF_Apparel_FuelCell.description>
+
+</LanguageData>

@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <ThingDef Name="FT_BaseCannonBuilding" ParentName="BuildingBase" Abstract="True">
+        <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <hasInteractionCell>True</hasInteractionCell>
+        <hasTooltip>true</hasTooltip>
+        <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
+        <stealable>false</stealable>
+        <rotatable>true</rotatable>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.85</fillPercent>
+        <tickerType>Normal</tickerType>
+        <designationCategory>Security</designationCategory>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <comps>
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="CompProperties_Mannable">
+                <manWorkType>Violent</manWorkType>
+            </li>
+        </comps>
+        <damageMultipliers>
+            <li>
+                <damageDef>EMP</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>Stun</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">
+                <damageDef>MechBandShockwave</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>Electrical</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <uiIconScale>1.1</uiIconScale>
+    </ThingDef>
+
+    <ThingDef Name="FT_BaseCannonBuilding_Mobile" ParentName="FT_BaseCannonBuilding" Abstract="True">
+        <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
+        <thingCategories>
+            <li>BuildingsSecurity</li>
+        </thingCategories>
+        <statBases>
+            <Bulk>1000</Bulk>
+            <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
+            <AimingAccuracy>1.0</AimingAccuracy>
+        </statBases>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <building>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+            <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+        </building>
+    </ThingDef>
+
+    <!--聯裝機槍-->
+    <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+        <defName>FT_Maxim4M</defName>
+        <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+        <label>quad-mounted machine gun</label>
+        <description>Antique machine guns in a linked quadruple configuration mounted on a tripod. Features an overall very high capacity of 800 rounds for sustained suppressive fire.</description>
+        <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
+        <uiIconScale>1</uiIconScale>
+        <graphicData>
+            <texPath>InfantryTurret/FT_Tripod</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.3,1.3)</drawSize>
+            <drawOffset>(0,0,-0.1)</drawOffset>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <WorkToBuild>3300</WorkToBuild>
+            <Mass>80</Mass>
+            <Bulk>100</Bulk>
+        </statBases>
+        <comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>0.833</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+        <costList>
+            <Steel>160</Steel>
+            <ComponentIndustrial>16</ComponentIndustrial>
+        </costList>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <building>
+            <turretTopDrawSize>2</turretTopDrawSize>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretGunDef>FT_Gun_QuadMG</turretGunDef>
+            <turretBurstWarmupTime>0.38</turretBurstWarmupTime>
+            <turretBurstCooldownTime>0.04</turretBurstCooldownTime>
+        </building>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>BlowbackOperation</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>FT_Gun_QuadMG</defName>
+        <label>quadruple machine guns</label>
+        <description>Four Maxim machine guns linked together.</description>
+        <graphicData>
+            <texPath>InfantryTurret/FT_QuadMaximGun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <RangedWeapon_Cooldown>0.04</RangedWeapon_Cooldown>
+            <SightsEfficiency>1.00</SightsEfficiency>
+            <ShotSpread>0.2</ShotSpread>
+            <SwayFactor>1.67</SwayFactor>
+        </statBases>
+        <weaponTags>
+            <li>TurretGun</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>0.41</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
+                <warmupTime>0.38</warmupTime>
+                <range>62</range>
+                <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+                <burstShotCount>20</burstShotCount>
+                <soundCast>GunShotA</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <recoilPattern>Mounted</recoilPattern>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>800</magazineSize>
+                <reloadTime>7.8</reloadTime>
+                <ammoSet>AmmoSet_762x54mmR</ammoSet>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>SuppressFire</aiAimMode>
+                <aimedBurstShotCount>10</aimedBurstShotCount>
+                <noSingleShot>true</noSingleShot>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+                <def>MF_StandardMuzzleFalsh</def>
+                <drawSize>(0.5,0.5)</drawSize>
+                <offsets>
+                    <li>(0.96,0.304)</li>
+                    <li>(0.96,0.125)</li>
+                    <li>(0.96,-0.125)</li>
+                    <li>(0.96,-0.304)</li>
+                </offsets>
+                <isAlternately>true</isAlternately>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!--單裝機砲-->
+    <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+        <defName>FT_AutoCannon</defName>
+        <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+        <label>autocannon</label>
+        <description>A 20mm autocannon mounted on a tripod.</description>
+        <uiIconPath>InfantryTurret/FT_AutoCannonGun_icon</uiIconPath>
+        <uiIconScale>1.2</uiIconScale>
+        <graphicData>
+            <texPath>InfantryTurret/FT_Tripod</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.3,1.3)</drawSize>
+            <drawOffset>(0,0,-0.1)</drawOffset>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <WorkToBuild>3300</WorkToBuild>
+            <Mass>330</Mass>
+            <Bulk>334</Bulk>
+            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+        </statBases>
+        <comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>1</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+        <costList>
+            <Steel>210</Steel>
+            <ComponentIndustrial>7</ComponentIndustrial>
+        </costList>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <building>
+            <turretTopDrawSize>2.5</turretTopDrawSize>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretGunDef>FT_Gun_Autocannon</turretGunDef>
+            <turretBurstWarmupTime>0.58</turretBurstWarmupTime>
+            <turretBurstCooldownTime>0.25</turretBurstCooldownTime>
+        </building>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>GasOperation</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>FT_Gun_Autocannon</defName>
+        <label>autocannon</label>
+        <description>A 20mm autocannon on a tripod.</description>
+        <graphicData>
+            <texPath>InfantryTurret/FT_AutoCannonGun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <statBases>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.01</ShotSpread>
+            <SwayFactor>1.35</SwayFactor>
+			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+			<Mass>60</Mass>
+        </statBases>
+        <weaponTags>
+            <li>TurretGun</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>0.93</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>True</hasStandardCommand>
+                <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
+                <warmupTime>1.1</warmupTime>
+                <range>86</range>
+                <burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+                <soundCast>Shot_Autocannon</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+                <recoilPattern>Mounted</recoilPattern>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>12</magazineSize>
+                <reloadTime>1.5</reloadTime>
+                <ammoSet>AmmoSet_20x138mmB</ammoSet>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>Snapshot</aiAimMode>
+                <aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--拖式機砲-->
+    <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+        <defName>FT_TurretAutoCannon_Twin</defName>
+        <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+        <label>twin anti-air autocannon</label>
+        <description>A twin-barreled autocannon mounted on a towed emplacement, designed for defense against low-flying aircraft.</description>
+        <uiIconPath>InfantryTurret/FT_AutoCannonTurret_icon</uiIconPath>
+        <uiIconScale>1</uiIconScale>
+        <graphicData>
+            <texPath>InfantryTurret/FT_WheeledTripod</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <drawOffset>(0,0,0)</drawOffset>
+        </graphicData>
+        <size>(2,1)</size>
+        <statBases>
+            <Bulk>660</Bulk>
+            <Mass>668</Mass>
+            <MaxHitPoints>750</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <WorkToBuild>3500</WorkToBuild>
+            <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
+            <AimingAccuracy>1.0</AimingAccuracy>
+        </statBases>
+        <comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>0.75</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+        <costList>
+            <Steel>330</Steel>
+            <ComponentIndustrial>9</ComponentIndustrial>
+            <!--<ReinforcedBarrel>2</ReinforcedBarrel>-->
+        </costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<invert>true</invert>
+			<costList>
+				<Steel>180</Steel>
+				<ComponentIndustrial>9</ComponentIndustrial>
+				<ReinforcedBarrel>2</ReinforcedBarrel>
+			</costList>
+		</costListForDifficulty>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <building>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretBurstWarmupTime>0.67</turretBurstWarmupTime>
+            <turretBurstCooldownTime>0.12</turretBurstCooldownTime>
+            <turretTopDrawSize>3.5</turretTopDrawSize>
+            <turretGunDef>FT_Gun_Autocannon_Twin</turretGunDef>
+        </building>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>GasOperation</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>FT_Gun_Autocannon_Twin</defName>
+        <label>twin-barreled autocannon</label>
+        <description>A 20mm twin-barreled autocannon mounted on a towed carriage.</description>
+        <graphicData>
+            <texPath>InfantryTurret/FT_Lahti_I-40</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <statBases>
+            <RangedWeapon_Cooldown>0.12</RangedWeapon_Cooldown>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.1</ShotSpread>
+            <SwayFactor>1.26</SwayFactor>
+            <Bulk>50</Bulk>
+        </statBases>
+        <weaponTags>
+            <li>TurretGun</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <recoilAmount>0.28</recoilAmount>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
+                <warmupTime>0.67</warmupTime>
+                <range>86</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <soundCast>Shot_Autocannon</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+                <recoilPattern>Mounted</recoilPattern>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>40</magazineSize>
+                <reloadTime>4</reloadTime>
+                <ammoSet>AmmoSet_20x138mmB</ammoSet>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>Snapshot</aiAimMode>
+                <aimedBurstShotCount>2</aimedBurstShotCount>
+                <noSingleShot>true</noSingleShot>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+                <def>MF_StandardMuzzleFalshTwo</def>
+                <drawSize>(2,2)</drawSize>
+                <offsets>
+                    <li>(1.5,0.1)</li>
+                    <li>(1.5,-0.1)</li>
+                </offsets>
+                <isAlternately>true</isAlternately>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+
+    <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+        <defName>FT_RecoillessGun</defName>
+        <label>recoilless rifle</label>
+        <description>A 105mm recoilless rifle mounted on a tripod. Lightweight anti-armor solution.</description>
+        <uiIconPath>InfantryTurret/FT_RecoillessGun_icon</uiIconPath>
+        <uiIconScale>1.2</uiIconScale>
+        <graphicData>
+            <texPath>InfantryTurret/FT_Tripod</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.2,1.2)</drawSize>
+            <drawOffset>(0,0,-0.1)</drawOffset>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <WorkToBuild>3300</WorkToBuild>
+            <Mass>210</Mass>
+            <Bulk>340</Bulk>
+        </statBases>
+        <comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>0.917</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+        <interactionCellOffset>(-1,0,0)</interactionCellOffset>
+        <costList>
+            <Steel>225</Steel>
+            <!--<ReinforcedBarrel>1</ReinforcedBarrel>-->
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<invert>true</invert>
+			<costList>
+				<Steel>150</Steel>
+				<ComponentIndustrial>5</ComponentIndustrial>
+				<ReinforcedBarrel>1</ReinforcedBarrel>
+			</costList>
+		</costListForDifficulty>
+        <building>
+            <turretGunDef>FT_Gun_Recoilless</turretGunDef>
+            <turretTopDrawSize>2.5</turretTopDrawSize>
+            <turretBurstWarmupTime>1.25</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+            <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+        </building>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>FT_IndustrialCannon</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>FT_Gun_Recoilless</defName>
+        <label>recoilless rifle</label>
+        <description>An M40 105mm recoilless rifle mounted on a tripod.</description>
+        <graphicData>
+            <texPath>InfantryTurret/FT_RecoillessGun</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <soundInteract>Artillery_ShellLoaded</soundInteract>
+        <statBases>
+            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+            <SightsEfficiency>2.18</SightsEfficiency>
+            <ShotSpread>0.01</ShotSpread>
+            <SwayFactor>1.55</SwayFactor>
+        </statBases>
+        <weaponTags>
+            <li>TurretGun</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_105x607mmRShell_HEAT</defaultProjectile>
+                <warmupTime>1.25</warmupTime>
+                <minRange>3.9</minRange>
+                <range>75</range>
+                <soundCast>FT_CannonLaunchA</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>20</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <recoilPattern>Mounted</recoilPattern>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>4</reloadTime>
+                <ammoSet>AmmoSet_105x607mmRShell</ammoSet>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="Fortified.CompProperties_CastPushHeat">
+                <energyPerCast>50000</energyPerCast>
+            </li>
+            <li Class="Fortified.CompProperties_CastFlecker"><!-- 後方揚塵-->
+                <fleck>DustPuffThick</fleck>
+                <burstAmount>20</burstAmount>
+                <burstSway>20</burstSway>
+                <burstAngle>180</burstAngle>
+                <fleckSizeRange>(1,8)</fleckSizeRange>
+                <burstSpeedRange>(0.5,1)</burstSpeedRange>
+                <burstOffsetRange>(4,9)</burstOffsetRange>
+                <onGroundOverride>true</onGroundOverride>
+            </li>
+            <li Class="Fortified.CompProperties_CastFlecker"><!-- 向後噴-->
+                <fleck>DustPuff</fleck>
+                <burstAmount>10</burstAmount>
+                <burstSway>45</burstSway>
+                <burstAngle>0</burstAngle>
+                <fleckSizeRange>(1,3)</fleckSizeRange>
+                <burstSpeedRange>(-0.5,0.5)</burstSpeedRange>
+                <burstOffsetRange>(2,5)</burstOffsetRange>
+                <onGroundOverride>true</onGroundOverride>
+            </li>
+            <li Class="Fortified.CompProperties_CastFlecker"><!-- 向後噴-->
+                <fleck>FT_ExhaustFlame</fleck>
+                <burstAmount>10</burstAmount>
+                <burstSway>5</burstSway>
+                <burstAngle>180</burstAngle>
+                <fleckSizeRange>(1,2)</fleckSizeRange>
+                <burstSpeedRange>(2,2.5)</burstSpeedRange>
+                <burstOffsetRange>(2,2.5)</burstOffsetRange>
+                <onGroundOverride>true</onGroundOverride>
+            </li>
+            <li Class="Fortified.CompProperties_CastFlecker"><!-- 向後噴-->
+                <fleck>FT_ExhaustFlameGlow</fleck>
+                <burstAmount>10</burstAmount>
+                <burstSway>5</burstSway>
+                <burstAngle>180</burstAngle>
+                <fleckSizeRange>(1,2)</fleckSizeRange>
+                <burstSpeedRange>(2,2.5)</burstSpeedRange>
+                <burstOffsetRange>(2,2.5)</burstOffsetRange>
+                <onGroundOverride>true</onGroundOverride>
+            </li>
+            <li Class="Fortified.CompProperties_CastFlecker"><!-- 向前-->
+                <fleck>DustPuff</fleck>
+                <burstAmount>10</burstAmount>
+                <burstSway>5</burstSway>
+                <burstAngle>180</burstAngle>
+                <fleckSizeRange>(5,8)</fleckSizeRange>
+                <burstSpeedRange>(1,8)</burstSpeedRange>
+                <burstOffsetRange>(7,11)</burstOffsetRange>
+                <onGroundOverride>true</onGroundOverride>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: disassembling -->
+  <WG_DisassembleWalkerCore.reportString>拆解瘫痪机体</WG_DisassembleWalkerCore.reportString>
+  
+  <!-- EN: entering ejector -->
+  <WG_GetInEjector.reportString>进入弹射器</WG_GetInEjector.reportString>
+  
+  <!-- EN: entering mecha suit -->
+  <WG_GetInWalkerCore.reportString>登机於整备架</WG_GetInWalkerCore.reportString>
+  
+  <!-- EN: entering mecha suit -->
+  <WG_GetInWalkerCore_NonDrafted.reportString>登机於整备架</WG_GetInWalkerCore_NonDrafted.reportString>
+  
+  <!-- EN: heading back to bay -->
+  <WG_GetOffWalkerCore.reportString>返回整备架</WG_GetOffWalkerCore.reportString>
+  
+  <!-- EN: repairing TargetA. -->
+  <WG_RepairAtGantry.reportString>在整备架上维修</WG_RepairAtGantry.reportString>
+  
+  <!-- EN: repairing TargetA. -->
+  <WG_RepairComponent.reportString>维修受损模块</WG_RepairComponent.reportString>
+  
+  <!-- EN: sleeping in mecha suit -->
+  <WG_SleepInWalkerCore.reportString>机甲内睡眠</WG_SleepInWalkerCore.reportString>
+
+  <!-- EN: heading back to bay -->
+  <WG_ReturnToBay.reportString>返回整备架</WG_ReturnToBay.reportString>
+  
+  <!-- EN: heading back to bay -->
+  <WG_TakeToMaintenanceBay.reportString>携带至整备架</WG_TakeToMaintenanceBay.reportString>
+
+  <WG_ReloadAtGantry.reportString>正在为 TargetA 装填弹药。</WG_ReloadAtGantry.reportString>
+  <WG_InstallModuleAtGantry.reportString>正在为 TargetA 安装模块。</WG_InstallModuleAtGantry.reportString>
+  <WG_RemoveModuleAtGantry.reportString>正在从 TargetA 拆卸模块。</WG_RemoveModuleAtGantry.reportString>
+  <WG_ClearAmmoBackpack.reportString>正在卸下弹药背包。</WG_ClearAmmoBackpack.reportString>
+  
+</LanguageData>

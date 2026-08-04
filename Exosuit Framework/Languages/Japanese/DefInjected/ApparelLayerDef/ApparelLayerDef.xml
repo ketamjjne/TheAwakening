@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: attachment modules -->
+  <ExosuitLayer_Attach.label>背面装備</ExosuitLayer_Attach.label>
+  
+  <!-- EN: core modules -->
+  <ExosuitLayer_Core.label>機体主機</ExosuitLayer_Core.label>
+  
+  <!-- EN: utility modules -->
+  <ExosuitLayer_Utility.label>作業装備</ExosuitLayer_Utility.label>
+  
+</LanguageData>
