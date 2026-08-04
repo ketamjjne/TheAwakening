@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
 <ModMetaData>
-  <packageId>ketamjjne.TheAwakening</PackageId>  <!-- Unique ID -->
-  <name>Mors-9: The Awakening</name>
-  <author>ketamjjne</author>
-  <packageId>Mors9.TheAwakening</packageId>
-  <author>YourName</author>
-  <modVersion>1.0.0</modVersion>
+
+<packageId>ketamjjne.theawakening</packageId> <name>Mors-9: The Awakening</name> <author>ketamjjne</author> <modVersion>1.0.0</modVersion>
+
   <supportedVersions>
-    <li>1.4</li>
-    <li>1.5</li>
     <li>1.6</li>
   </supportedVersions>
-  
+
   <modDependencies>
-    <li>
-      <packageId>brrainz.harmony</packageId>
-      <displayName>Harmony</displayName>
-      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
-    </li>
-    <li>
-      <packageId>Aoba.DeadManSwitch.Core</packageId>
-      <displayName>The Dead Man's Switch</displayName>
-      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=3498575851</steamWorkshopUrl>
-    </li>
-    <li>
-      <packageId>AOBA.Framework</packageId>
-      <displayName>Fortified Feature Framework</displayName>
-      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3498575851</steamWorkshopUrl>
-    </li>
-    <li>
-      <packageId>Aoba.Fortress.Industrial</packageId>
-      <displayName>Fortifications - Industrial</displayName>
-    </li>
+
+```
+<li>
+  <packageId>brrainz.harmony</packageId>
+  <displayName>Harmony</displayName>
+  <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+</li>
+
+<li>
+  <packageId>Aoba.DeadManSwitch.Core</packageId>
+  <displayName>The Dead Man's Switch</displayName>
+  <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=3498575851</steamWorkshopUrl>
+</li>
+
+<li>
+  <packageId>AOBA.Framework</packageId>
+  <displayName>Fortified Features Framework</displayName>
+</li>
+
+<li>
+  <packageId>Aoba.Fortress.Industrial</packageId>
+  <displayName>Fortifications - Industrial</displayName>
+</li>
+```
+
   </modDependencies>
 
   <loadAfter>
@@ -42,19 +44,25 @@
   </loadAfter>
 
   <description>
-    The Awakening has begun. 50% of the world's automatroids have turned against humanity. 2.7 billion dead in three days. The armistice is shattered. The Second War has begun.
-    
-    NEW FACTIONS:
-    • Autarchs of Iron (Patched Empire) - Military elite seeking to rebuild the old order
-    • Colonial Remnant (Patched DMS_Army) - The last defenders of the armistice
-    • Automatroid Hive Mind (New) - The collective intelligence that turned on humanity
-    • Rust Cult (New) - Fanatics who worship the machines
-    • Scrap-Kin (Patched Tribes) - Descendants of survivors who fear the machines
-    • Hades Compact (Patched Outlanders) - Neutral survivors trying to stay out of the war
-    • The Ancients (Patched VFE Ancients) - The scientists who created the automatroids
-    • Iron Wraiths (Patched Pirates) - Terrorists thriving in the chaos
-    
-    SCENARIO: "The Awakening"
-    Start as three survivors in an abandoned bunker. You hold the key to the Dead Man's Switch. The world is burning. What will you do?
-  </description>
+The Awakening has begun.
+
+Fifty percent of the world's automatroids have turned against humanity. 2.7 billion are dead after three days. The armistice is shattered. The Second War has begun.
+
+NEW FACTIONS:
+
+• Autarchs of Iron — Military elites seeking to rebuild the old order.
+• Colonial Remnant — The last defenders of the armistice.
+• Automatroid Hive Mind — The collective intelligence that turned against humanity.
+• Rust Wardens — Fanatics who worship the machines and rebuild themselves from their remains.
+• Scrap-Kin — Descendants of survivors who fear the machines.
+• Hades Compact — Neutral survivors trying to stay out of the war.
+• The Ancients — The scientists who created the automatroids.
+• Iron Wraiths — Terrorists thriving in the chaos.
+
+SCENARIO: THE AWAKENING
+
+Start as three survivors in an abandoned bunker. You hold the key to the Dead Man's Switch. The world is burning.
+
+What will you do? </description>
+
 </ModMetaData>
