@@ -1,171 +1,144 @@
 <?xml version="1.0" encoding="utf-8" ?>
-  <!-- =========================================== -->
-  <!-- PATCH: Empire → Autarchs of Iron            -->
-  <!-- =========================================== -->
-  <Defs>
-    <Patch>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="Empire"]/label</xpath>
-    <value>
-      <label>Autarchs of Iron</label>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="Empire"]/description</xpath>
-    <value>
-      <description>The old blood remembers what the new world forgot. The Autarchs of Iron claim descent from the Core Worlds Alliance that fought the First War. They knew the machines would betray humanity. They prepared. Now they enforce strict martial law and see themselves as the only true leaders of Mors.</description>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="Empire"]/leaderTitle</xpath>
-    <value>
-      <leaderTitle>Autarch</leaderTitle>
-    </value>
-  </Operation>
-    </Patch>
-  </Defs>
+<Defs>
+  <Patch>
+    <!-- =========================================== -->
+    <!-- PATCH: Empire → Autarchs of Iron            -->
+    <!-- =========================================== -->
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="Empire"]/label</xpath>
+      <value>
+        <label>Autarchs of Iron</label>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="Empire"]/description</xpath>
+      <value>
+        <description>The old blood remembers what the new world forgot. The Autarchs of Iron claim descent from the Core Worlds Alliance that fought the First War. They knew the machines would betray humanity. They prepared. Now they enforce strict martial law and see themselves as the only true leaders of Mors.</description>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="Empire"]/leaderTitle</xpath>
+      <value>
+        <leaderTitle>Autarch</leaderTitle>
+      </value>
+    </Operation>
 
-  <!-- =========================================== -->
-  <!-- PATCH: DMS_Army → Colonial Remnant          -->
-  <!-- =========================================== -->
-  <Defs>
-    <Patch>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="DMS_Army"]/label</xpath>
-    <value>
-      <label>Colonial Remnant</label>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="DMS_Army"]/description</xpath>
-    <value>
-      <description>We were sent to build a future. We will not let the machines take it from us. The Colonial Remnant is the military force that survived the First War and the armistice. They were hit hardest by the Awakening - 60% of their forces turned against them. They are now humanity's last organized defense against the Hive Mind.</description>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="DMS_Army"]/leaderTitle</xpath>
-    <value>
-      <leaderTitle>Marshal</leaderTitle>
-    </value>
-  </Operation>
-      </Patch>
-  </Defs>
+    <!-- =========================================== -->
+    <!-- PATCH: DMS_Army → Colonial Remnant          -->
+    <!-- =========================================== -->
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="DMS_Army"]/label</xpath>
+      <value>
+        <label>Colonial Remnant</label>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="DMS_Army"]/description</xpath>
+      <value>
+        <description>We were sent to build a future. We will not let the machines take it from us. The Colonial Remnant is the military force that survived the First War and the armistice. They were hit hardest by the Awakening - 60% of their forces turned against them. They are now humanity's last organized defense against the Hive Mind.</description>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="DMS_Army"]/leaderTitle</xpath>
+      <value>
+        <leaderTitle>Marshal</leaderTitle>
+      </value>
+    </Operation>
 
-  <!-- =========================================== -->
-  <!-- PATCH: OutlanderCivil → Hades Compact       -->
-  <!-- =========================================== -->
-  <Defs>
-    <Patch>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="OutlanderCivil"]/label</xpath>
-    <value>
-      <label>Hades Compact</label>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="OutlanderCivil"]/description</xpath>
-    <value>
-      <description>We survived the First War. We survived the Awakening. We will survive the Second. The Hades Compact is a coalition of independent settlements that stayed neutral during the first war and the Awakening. They maintain the last functional rail networks and the only reliable supply of Ghost Iron. They trade with anyone who doesn't shoot at them.</description>
-    </value>
-  </Operation>
-      </Patch>
-  </Defs>
+    <!-- =========================================== -->
+    <!-- PATCH: OutlanderCivil → Hades Compact       -->
+    <!-- =========================================== -->
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="OutlanderCivil"]/label</xpath>
+      <value>
+        <label>Hades Compact</label>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="OutlanderCivil"]/description</xpath>
+      <value>
+        <description>We survived the First War. We survived the Awakening. We will survive the Second. The Hades Compact is a coalition of independent settlements that stayed neutral during the first war and the Awakening. They maintain the last functional rail networks and the only reliable supply of Ghost Iron. They trade with anyone who doesn't shoot at them.</description>
+      </value>
+    </Operation>
 
-  <!-- =========================================== -->
-  <!-- PATCH: OutlanderRough → Scrap-Kin           -->
-  <!-- =========================================== -->
-  <Defs>
-    <Patch>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="OutlanderRough"]/label</xpath>
-    <value>
-      <label>Scrap-Kin</label>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="OutlanderRough"]/description</xpath>
-    <value>
-      <description>The machines are angry. They are hungry. They will eat us all. The Scrap-Kin are descendants of factory workers who watched the Awakening from their forges. They worship machines out of fear, not devotion. They raid anyone who doesn't pay their tribute to the machine gods.</description>
-    </value>
-  </Operation>
-      </Patch>
-  </Defs>
+    <!-- =========================================== -->
+    <!-- PATCH: OutlanderRough → Scrap-Kin           -->
+    <!-- =========================================== -->
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="OutlanderRough"]/label</xpath>
+      <value>
+        <label>Scrap-Kin</label>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="OutlanderRough"]/description</xpath>
+      <value>
+        <description>The machines are angry. They are hungry. They will eat us all. The Scrap-Kin are descendants of factory workers who watched the Awakening from their forges. They worship machines out of fear, not devotion. They raid anyone who doesn't pay their tribute to the machine gods.</description>
+      </value>
+    </Operation>
 
-  <!-- =========================================== -->
-  <!-- PATCH: TribeCivil → Scrap-Kin               -->
-  <!-- =========================================== -->
-  <Defs>
-    <Patch>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="TribeCivil"]/label</xpath>
-    <value>
-      <label>Scrap-Kin</label>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="TribeCivil"]/description</xpath>
-    <value>
-      <description>The machines are angry. They are hungry. They will eat us all. The Scrap-Kin are descendants of factory workers who watched the Awakening from their forges. They worship machines out of fear, not devotion. They raid anyone who doesn't pay their tribute to the machine gods.</description>
-    </value>
-  </Operation>
-      </Patch>
-  </Defs>
+    <!-- =========================================== -->
+    <!-- PATCH: TribeCivil → Scrap-Kin               -->
+    <!-- =========================================== -->
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="TribeCivil"]/label</xpath>
+      <value>
+        <label>Scrap-Kin</label>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="TribeCivil"]/description</xpath>
+      <value>
+        <description>The machines are angry. They are hungry. They will eat us all. The Scrap-Kin are descendants of factory workers who watched the Awakening from their forges. They worship machines out of fear, not devotion. They raid anyone who doesn't pay their tribute to the machine gods.</description>
+      </value>
+    </Operation>
 
-  <!-- =========================================== -->
-  <!-- PATCH: TribeRough → Scrap-Kin               -->
-  <!-- =========================================== -->
-  <Defs>
-    <Patch>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="TribeRough"]/label</xpath>
-    <value>
-      <label>Scrap-Kin</label>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="TribeRough"]/description</xpath>
-    <value>
-      <description>The machines are angry. They are hungry. They will eat us all. The Scrap-Kin are descendants of factory workers who watched the Awakening from their forges. They worship machines out of fear, not devotion. They raid anyone who doesn't pay their tribute to the machine gods.</description>
-    </value>
-  </Operation>
-      </Patch>
-  </Defs>
+    <!-- =========================================== -->
+    <!-- PATCH: TribeRough → Scrap-Kin               -->
+    <!-- =========================================== -->
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="TribeRough"]/label</xpath>
+      <value>
+        <label>Scrap-Kin</label>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="TribeRough"]/description</xpath>
+      <value>
+        <description>The machines are angry. They are hungry. They will eat us all. The Scrap-Kin are descendants of factory workers who watched the Awakening from their forges. They worship machines out of fear, not devotion. They raid anyone who doesn't pay their tribute to the machine gods.</description>
+      </value>
+    </Operation>
 
-  <!-- =========================================== -->
-  <!-- PATCH: Pirates → Iron Wraiths               -->
-  <!-- =========================================== -->
-  <Defs>
-    <Patch>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="Pirate"]/label</xpath>
-    <value>
-      <label>Iron Wraiths</label>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="Pirate"]/description</xpath>
-    <value>
-      <description>The Awakening was the best thing that ever happened to us. Now there's no one left to enforce the rules. The Iron Wraiths are terrorists and pirates who operate from the Dead Cities. They are secretly funded by the Autarchs to destabilize the armistice, but they have their own agenda: total anarchy.</description>
-    </value>
-  </Operation>
-      </Patch>
-  </Defs>
-  <!-- =========================================== -->
-  <!-- PATCH: VFE Ancients → The Ancients         -->
-  <!-- =========================================== -->
-  <Defs>
-    <Patch>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="Ancient"]/label</xpath>
-    <value>
-      <label>The Ancients</label>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="Ancient"]/description</xpath>
-    <value>
-      <description>We built the machines. We never knew we were building a god. The Ancients are the original scientists and engineers who created the automatroids. They hold the keys to the Dead Man's Switch. They are hunted by everyone who wants to control the machines.</description>
-    </value>
-  </Operation>
+    <!-- =========================================== -->
+    <!-- PATCH: Pirates → Iron Wraiths               -->
+    <!-- =========================================== -->
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="Pirate"]/label</xpath>
+      <value>
+        <label>Iron Wraiths</label>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="Pirate"]/description</xpath>
+      <value>
+        <description>The Awakening was the best thing that ever happened to us. Now there's no one left to enforce the rules. The Iron Wraiths are terrorists and pirates who operate from the Dead Cities. They are secretly funded by the Autarchs to destabilize the armistice, but they have their own agenda: total anarchy.</description>
+      </value>
+    </Operation>
+
+    <!-- =========================================== -->
+    <!-- PATCH: VFE Ancients → The Ancients         -->
+    <!-- =========================================== -->
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="Ancient"]/label</xpath>
+      <value>
+        <label>The Ancients</label>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="Ancient"]/description</xpath>
+      <value>
+        <description>We built the machines. We never knew we were building a god. The Ancients are the original scientists and engineers who created the automatroids. They hold the keys to the Dead Man's Switch. They are hunted by everyone who wants to control the machines.</description>
+      </value>
+    </Operation>
   </Patch>
 </Defs>
