@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- =========================================== -->
-  <!-- RUST CULT PAWN KINDS                      -->
+  <!-- RUST CULT PAWN KINDS                       -->
   <!-- =========================================== -->
 
   <!-- Rust Cult Fanatic -->
@@ -86,6 +86,7 @@
       <li>DMS_Apparel_BionicSuit</li>
       <li>DMS_Apparel_TacticalCloak</li>
     </apparelRequired>
+    <!-- REMOVED: DMS_Apparel_ArmyCap and DMS_Apparel_ArrayHelmet conflict -->
     <weaponTags>
       <li>DMS_MarksmanRifle</li>
       <li>DMS_AntiMaterialRifle</li>
@@ -177,6 +178,7 @@
       <li>DMS_Apparel_TacticalVest</li>
       <li>DMS_Apparel_BionicSuit</li>
     </apparelRequired>
+    <!-- REMOVED: DMS_Apparel_UnitSuit conflicts with BionicSuit -->
     <weaponTags>
       <li>DMS_AssaultRifle</li>
       <li>DMS_TacticalPistol</li>
@@ -284,6 +286,7 @@
     <apparelRequired>
       <li>DMS_Apparel_BionicSuit</li>
     </apparelRequired>
+    <!-- REMOVED: DMS_Apparel_UnitSuit conflicts -->
     <weaponTags>
       <li>DMS_TacticalPistol</li>
     </weaponTags>
