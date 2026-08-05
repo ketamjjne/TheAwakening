@@ -317,8 +317,7 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <DMS_RustWarden_Scav>8</DMS_RustWarden_Scav>
-          <DMS_RustWarden_Scav>5</DMS_RustWarden_Scav>
+          <DMS_RustWarden_Scav>13</DMS_RustWarden_Scav>
           <DMS_Mech_Soldat>3</DMS_Mech_Soldat>
         </options>
       </li>
