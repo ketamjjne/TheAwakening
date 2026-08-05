@@ -163,6 +163,52 @@
   </PawnKindDef>
 
   <!-- =========================================== -->
+  <!-- GHOST LIGHT PAWN KINDS                      -->
+  <!-- =========================================== -->
+
+  <!-- Ghostlight Scavenger -->
+  <PawnKindDef ParentName="DMS_CivilianBase">
+  <defName>DMS_Ghostlight_Scavenger</defName>
+  <label>ghostlight scavenger</label>
+  <race>Human</race>
+  <combatPower>40</combatPower>
+  <apparelRequired>
+    <li>DMS_Apparel_TacticalVest</li>
+  </apparelRequired>
+  <weaponTags>
+    <li>DMS_AssaultRifle</li>
+    <li>DMS_Pistol</li>
+  </weaponTags>
+</PawnKindDef>
+
+  <!-- Ghostlight Engineer -->
+  <PawnKindDef ParentName="DMS_CivilianBase">
+  <defName>DMS_Ghostlight_Engineer</defName>
+  <label>ghostlight engineer</label>
+  <race>Human</race>
+  <combatPower>55</combatPower>
+  <apparelRequired>
+    <li>DMS_Apparel_TacticalVest</li>
+  </apparelRequired>
+  <weaponTags>
+    <li>DMS_AssaultRifle</li>
+    <li>DMS_BattleRifle</li>
+  </weaponTags>
+</PawnKindDef>
+
+  <!-- Ghostlight Wraith -->
+  <PawnKindDef ParentName="DMS_OfficerBase">
+  <defName>DMS_Ghostlight_Wraith</defName>
+  <label>wraith primus</label>
+  <race>Human</race>
+  <combatPower>180</combatPower>
+  <weaponTags>
+    <li>DMS_BattleRifle</li>
+    <li>DMS_SniperRifle</li>
+  </weaponTags>
+</PawnKindDef>
+
+  <!-- =========================================== -->
   <!-- SCENARIO PAWN KINDS                        -->
   <!-- =========================================== -->
 
