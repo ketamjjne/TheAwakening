@@ -182,6 +182,9 @@
         <!-- FACTION RELATIONS                          -->
         <!-- =========================================== -->
 
+        <!-- NOTE: These FactionDefs must exist in your mod or dependencies -->
+        <!-- If they don't exist yet, you need to create them or remove these parts -->
+
         <li Class="Fortified.Structures.ScenPart_ForcedFactionGoodwill">
           <def>FFF_ForcedFactionGoodwill</def>
           <factionDef>DMS_ColonialRemnant</factionDef>
