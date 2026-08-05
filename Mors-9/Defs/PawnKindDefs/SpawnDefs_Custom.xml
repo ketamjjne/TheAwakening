@@ -6,7 +6,7 @@
 
   <!-- Rust Cult Fanatic -->
   <PawnKindDef ParentName="DMS_CivilianBase">
-    <defName>DMS_RustCult_Fanatic</defName>
+    <defName>DMS_RustWarden_Scav</defName>
     <label>rust fanatic</label>
     <labelPlural>rust fanatics</labelPlural>
     <combatPower>55</combatPower>
@@ -37,7 +37,7 @@
 
   <!-- Rust Cult Augmented -->
   <PawnKindDef ParentName="DMS_SoldierBase">
-    <defName>DMS_RustCult_Augmented</defName>
+    <defName>DMS_RustWarden_Augmented</defName>
     <label>rust augmented</label>
     <labelPlural>rust augmented</labelPlural>
     <combatPower>120</combatPower>
@@ -76,7 +76,7 @@
 
   <!-- Rust Cult Warpriest -->
   <PawnKindDef ParentName="DMS_OfficerBase">
-    <defName>DMS_RustCult_Warpriest</defName>
+    <defName>DMS_RustWarden_Warpriest</defName>
     <label>rust warpriest</label>
     <labelPlural>rust warpriests</labelPlural>
     <combatPower>180</combatPower>
@@ -121,7 +121,7 @@
 
   <!-- Rust Cult Scrap Titan -->
   <PawnKindDef ParentName="BaseAutomatroidKind">
-    <defName>DMS_RustCult_ScrapTitan</defName>
+    <defName>DMS_RustWarden_ScrapTitan</defName>
     <label>rust scrap titan</label>
     <race>DMS_Mech_BattleFrame</race>
     <isFighter>true</isFighter>
@@ -157,7 +157,7 @@
     </abilities>
     <modExtensions>
       <li Class="Fortified.DefaultTilteFactionExtension">
-        <faction>DMS_RustCult</faction>
+        <faction>DMS_RustWardens</faction>
       </li>
     </modExtensions>
   </PawnKindDef>
