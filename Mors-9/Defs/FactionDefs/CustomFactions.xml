@@ -37,15 +37,7 @@
         <li>Fabric</li>
       </stuffCategoriesToAllow>
     </apparelStuffFilter>
-    <apparelRequired>
-      <li>DMS_Apparel_UnitSuit</li>
-      <li>DMS_Apparel_GarrisonCoat</li>
-    </apparelRequired>
-    <apparelTags>
-      <li>DMS_Garrison</li>
-      <li>DMS_Clothing</li>
-      <li>DMS_Tactical</li>
-    </apparelTags>
+    <!-- REMOVED: apparelRequired and apparelTags -->
     <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
     <settlementTexturePath>UI/Faction/GhostlightSite</settlementTexturePath>
     <fixedLeaderKinds>
@@ -120,57 +112,42 @@
     </disallowedRaidAgeRestrictions>
   </FactionDef>
 
-  <!-- Ghostlight Honor System Titles -->
+  <!-- =========================================== -->
+  <!-- GHOSTLIGHT ROYAL TITLES (Fixed)            -->
+  <!-- =========================================== -->
+  <!-- The correct RoyalTitleDef uses:
+       - <factionRequired> (not requiredFaction)
+       - <requiredRoyalTitle> for prerequisites
+       - <bestowingCeremony> for perks/abilities
+  -->
   <RoyalTitleDef MayRequire="Ludeon.RimWorld.Royalty">
     <defName>DMS_Ghostlight_Scavenger</defName>
     <label>Scavenger</label>
     <description>Basic tier - Access to trade and blueprints.</description>
-    <requiredFaction>DMS_Ghostlight</requiredFaction>
-    <requiredGoodwill>0</requiredGoodwill>
-    <perks>
-      <li>TradeAccess</li>
-    </perks>
+    <factionRequired>DMS_Ghostlight</factionRequired>
+    <!-- Removed: requiredGoodwill, perks -->
   </RoyalTitleDef>
 
   <RoyalTitleDef MayRequire="Ludeon.RimWorld.Royalty">
     <defName>DMS_Ghostlight_Spark</defName>
     <label>Spark</label>
     <description>Second tier - Access to DMS modifications and motorized parts.</description>
-    <requiredFaction>DMS_Ghostlight</requiredFaction>
-    <requiredGoodwill>30</requiredGoodwill>
-    <perks>
-      <li>TradeAccess</li>
-      <li>DMSModAccess</li>
-    </perks>
+    <factionRequired>DMS_Ghostlight</factionRequired>
   </RoyalTitleDef>
 
   <RoyalTitleDef MayRequire="Ludeon.RimWorld.Royalty">
     <defName>DMS_Ghostlight_Ghost</defName>
     <label>Ghost</label>
     <description>Third tier - Call in Phantom Strike airstrikes.</description>
-    <requiredFaction>DMS_Ghostlight</requiredFaction>
-    <requiredGoodwill>60</requiredGoodwill>
-    <perks>
-      <li>TradeAccess</li>
-      <li>DMSModAccess</li>
-      <li>PhantomStrike</li>
-    </perks>
+    <factionRequired>DMS_Ghostlight</factionRequired>
   </RoyalTitleDef>
 
   <RoyalTitleDef MayRequire="Ludeon.RimWorld.Royalty">
     <defName>DMS_Ghostlight_Wraith</defName>
     <label>Wraith</label>
     <description>Fourth tier - Access to secret bunkers and AI Fragment pawns.</description>
-    <requiredFaction>DMS_Ghostlight</requiredFaction>
-    <requiredGoodwill>90</requiredGoodwill>
-    <perks>
-      <li>TradeAccess</li>
-      <li>DMSModAccess</li>
-      <li>PhantomStrike</li>
-      <li>AIFragmentAccess</li>
-      <li>SecretBunkers</li>
-    </perks>
-    <fixedLeader>true</fixedLeader>
+    <factionRequired>DMS_Ghostlight</factionRequired>
+    <!-- Removed: fixedLeader -->
   </RoyalTitleDef>
 
   <!-- =========================================== -->
@@ -327,15 +304,7 @@
         <li>Fabric</li>
       </stuffCategoriesToAllow>
     </apparelStuffFilter>
-    <apparelRequired>
-      <li>DMS_Apparel_GarrisonCoat</li>
-      <li>DMS_Apparel_TacticalVest</li>
-    </apparelRequired>
-    <apparelTags>
-      <li>DMS_Garrison</li>
-      <li>DMS_Tactical</li>
-      <li>DMS_Armor</li>
-    </apparelTags>
+    <!-- REMOVED: apparelRequired and apparelTags -->
     <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
     <settlementTexturePath>UI/Faction/RustWardenSite</settlementTexturePath>
     <fixedLeaderKinds>
