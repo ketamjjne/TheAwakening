@@ -170,7 +170,7 @@
     <settlementNameMaker>DMS_IronTideBase</settlementNameMaker>
     <techLevel>Spacer</techLevel>
     <humanlikeFaction>false</humanlikeFaction>
-    <hidden>false</hidden>
+    <hidden>true</hidden>
     <autoFlee>false</autoFlee>
     <canUseAvoidGrid>true</canUseAvoidGrid>
     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
