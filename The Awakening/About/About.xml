@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>The Awakening</name>
+
+  <author>Ketamjne</author>
+
+  <packageId>yourname.theawakening</packageId>
+
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+
+  <description>
+The Awakening is a complete world-conversion mod inspired by the Dead Man's Switch universe.
+
+The industrial world of Mors has fallen. Humanity no longer stands as the dominant force on the planet. Rival factions, loyal automatroids, and the Automatroid Hivemind wage an endless war across the ruins of a once-great civilization.
+
+This mod reimagines the vanilla RimWorld factions, replacing them with new organizations, lore, and gameplay while remaining faithful to the themes of Dead Man's Switch.
+  </description>
+</ModMetaData>
