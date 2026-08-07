@@ -1,0 +1,208 @@
+🏛️ 1. THE AUTARCHS OF IRON (Patched Empire)
+
+Original: Empire
+Color: Dark Steel / Gold (#4A4A4A / #C8A84A)
+
+"The old blood remembers what the new world forgot. We are the inheritors of Mors, and we will see it restored."
+Lore
+
+The Autarchs claim direct descent from Mors's pre-war military governors. They maintain the most advanced technology on the planet, hoarded in their fortress-cities. They enforce strict "purity" laws - no AI, no augmentations, no compromise. They see themselves as the rightful rulers of Mors and wage war against all "impure" factions.
+Culture
+
+Leadership: Autarch Council, a oligarchy of military commanders and old world upperclass nobility
+Belief: Humanity must be preserved in its "pure" form
+Technology: High industrial, pre-war military tech
+
+Relations
+
+Neutral: The Colonial Remnant (shared military history)
+Hostile: Automatroid Collective, Rust Cult, Scrap-Kin
+Neutral: Outlander factions (though they view them as peasants)
+
+THE AUTARCHS OF IRON (Patched Empire)
+
+Original: Empire
+Color: Dark Steel / Gold (#4A4A4A / #C8A84A)
+
+"The old blood remembers what the new world forgot. We are the inheritors of Mors, and we will see it restored."
+Lore
+
+The Autarchs claim direct descent from Mors's pre-war military governors. They maintain the most advanced technology on the planet, hoarded in their fortress-cities. They enforce strict "purity" laws - no AI, no augmentations, no compromise. They see themselves as the rightful rulers of Mors and wage war against all "impure" factions.
+Culture
+
+    Leadership: Autarch Council, a oligarchy of military commanders
+
+    Belief: Humanity must be preserved in its "pure" form
+
+    Technology: High industrial, pre-war military tech
+
+    Symbol: Iron fist clutching a shattered gear
+
+Relations
+
+    Ally: Colonial Remnant (shared military history)
+
+    Hostile: Automatroid Collective, Rust Cult, Scrap-Kin
+
+    Neutral: Outlander factions (though they view them as peasants)
+
+🎖️ 2. THE COLONIAL REMNANT (Patched DMS_Army)
+
+Original: DMS_Army (Colonization Forces)
+Color: Military Green / Blue-Grey (#4A6A5A / #5A6A7A)
+
+"We were sent to build a future. Now we fight to survive the past."
+Lore
+
+The Colonial Remnant is what remains of the military forces that first settled Mors. When the war came, they were overwhelmed and scattered. Now, they operate as a mercenary coalition, holding onto the last functional orbital relay and planetary defense grid. They maintain the highest level of military discipline and the most intact pre-war records.
+Culture
+
+    Leadership: Marshal Command, a meritocratic military council
+
+    Belief: The mission was to colonize, and they will see it through
+
+    Technology: Industrial military, some pre-war relics
+
+
+Relations
+
+    Neutral: Autarchs of Iron (old allies)
+
+    Hostile: Automatroid Collective, Rust Cult, Iron Tide (rogue automatroids)
+
+    Protected: Hades Compact settlements
+	
+	
+🦾  3.THE RUST CULT (Tribal Robot Cultist Fanatics)
+
+Original: DMS_RustCult (New)
+Color: Rust Brown / Copper (#8B4513 / #B87333)
+
+"The machine is eternal. We are its children. Embrace the rust, and you too shall become eternal."
+Lore
+
+The Rust Cult began as survivors who witnessed the automatroids' power and decided to worship it. They believe the machines are gods and that humanity's only path to salvation is to become machine-like. They ritually amputate limbs and replace them with salvaged automatroid parts, and Bionic implants. The more mechanical they become, the higher their status in the cult.
+Culture
+
+    Leadership: The Warpriest Council - the most augmented
+
+    Belief: Machine > Human; augmentation is ascension
+
+    Technology: Scavenged and jury-rigged, but functional
+
+
+Relations
+
+    Hostile: Autarchs of Iron, Colonial Remnant, Outlanders
+
+    Worshipped: Automatroid Collective (they see them as gods)
+
+    Neutral: Scrap-Kin (they see them as misguided peasants)
+	
+	
+🔥 4.THE SCRAP-KIN (Patched Rough Outlander)
+
+Original: OutlanderRough / TribeRough
+Color: Rust Orange / Grey (#CC8833 / #666666)
+
+"The metal god speaks in the hum of the forge. We are its voice."
+Lore
+
+The Scrap-Kin are the descendants of factory workers who went feral during the collapse. They live in the ruins of ancient factories and worship the machines as gods. Unlike the Rust Cult, the Scrap-Kin are more primitive - they don't understand the machines, only that they must be appeased with offerings of oil and steel. They raid settlements for components to offer to their "metal gods."
+Culture
+
+    Leadership: Chieftains (those who can still read old manuals)
+
+    Belief: Machines are spirits that must be appeased
+
+    Technology: Primitive, salvaged industrial
+
+
+Relations
+
+    Hostile: Autarchs of Iron, Colonial Remnant
+
+    Neutral: Scavengers (they see them as competition)
+
+    Worshipped: Automatroid Collective (they leave offerings)
+	
+	
+🌾 6. THE HADES COMPACT (Patched OutlanderCivil)
+
+Original: OutlanderCivil
+Color: Steel Blue / Gold (#4A7A8A / #C8A84A)
+
+"We survived the fire. We will survive the silence."
+Lore
+
+The Hades Compact is a loose coalition of independent settlements that survived by cooperating. They maintain the last functional rail networks and the only reliable supply of Ghost Iron - a precious pre-war alloy. They are pragmatic survivors who trade with anyone who doesn't shoot at them, making them the most stable faction on Mors.
+Culture
+
+    Leadership: The Council of Settlers (democratic)
+
+    Belief: Cooperation and trade is survival
+
+    Technology: Low industrial, repair-based
+
+
+Relations
+
+    Ally: Colonial Remnant (they provide supplies)
+
+    Trade: All neutral factions
+
+    Hostile: Automatroid Collective, Rust Cult (they steal their supplies)
+	
+	
+🏚️ 7. THE ANCIENTS (Patched Ancients/VFE Ancients)
+
+Original: Ancient Faction (VFE Ancients)
+Color: Bronze / Dark Gold (#8A6A3A)
+
+"We built the machines. We lived through the war. We remember."
+Lore
+
+The Ancients are pre-war survivors who were in cryosleep during the automated wars. They are a mix of original military personnel, scientists, and wealthy industrialists. They hold the most advanced pre-war knowledge but are few in number. They are hunted by all other factions for their knowledge, and they view the current state of Mors with a mix of horror and responsibility.
+Culture
+
+    Leadership: The Archive Council (the last scientists)
+
+    Belief: Knowledge is the only path to redemption
+
+    Technology: Pre-war ultra-tech (but limited resources)
+
+
+Relations
+
+    Ally: Colonial Remnant (old comrades)
+
+    Protected: Hades Compact (they trade knowledge for protection)
+
+    Hunted: Autarchs of Iron, Rust Cult, Scrap-Kin
+	
+	
+🏴‍☠️ 8. THE IRON WRAITHS (Patched Pirate Faction)
+
+Original: Pirates
+Color: Dark Red / Black (#662222 / #222222)
+
+"The war never ended. It just changed uniforms."
+Lore
+
+The Iron Wraiths are terrorists, mercenaries and pirates who operate from the Dead Cities - the ruins of Mors's pre-war metropolises, still crawling with malfunctioning automatroids. They believe the war was a conspiracy to enslave humanity and fight against everyone else. They are as likely to attack a military convoy as they are a civilian caravan, and their ranks are filled with deserters and radicals from every other faction.
+Culture
+
+    Leadership: Warlords who control the Dead Cities
+
+    Belief: All factions are tyrannical; chaos is freedom
+
+    Technology: Mixed - whatever they can steal
+
+    Symbol: A broken gear with a skull
+
+Relations
+
+    Hostile: Everyone (they're terrorists)
+
+    Friendly: None (they're self-destructive)
+
