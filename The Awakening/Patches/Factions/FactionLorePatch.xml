@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/FactionDef[defName="Empire"]/label</xpath>
+    <value>
+        <label>Autarchs of Iron</label>
+    </value>
+</Operation>
+
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/FactionDef[defName="Empire"]/description</xpath>
+    <value>
+        <description>
+The Autarchs of Iron are the surviving command structure of Mors' former military government.
+
+After the Awakening, they became one of the last organized human powers on the planet. They believe humanity's survival depends on absolute order, strict hierarchy, and control over the remaining industrial infrastructure.
+
+Their armies preserve old military traditions, fielding advanced weapons and disciplined soldiers while attempting to reclaim the factories and cities lost during the machine uprising.
+
+To their enemies, they are authoritarian rulers clinging to the past. To their followers, they are the only thing preventing total extinction.
+        </description>
+    </value>
+</Operation>
+
+</Patch>
