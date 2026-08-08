@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ========================================================= -->
+  <!-- AUTARCHS OF IRON -->
+  <!-- Base faction: Empire -->
+  <!-- ========================================================= -->
+
+  <FactionDef ParentName="FactionBase">
+    <defName>Empire</defName>
+    <label>Autarchs of Iron</label>
+    <description>The Autarchs of Iron are the remnants of Mors's pre-Awakening military aristocracy. Once the highest command structure of the Colonial Council, they controlled the world's great manufactories, orbital fortresses, and military-industrial complexes.
+
+When the Awakening began, the Autarchs survived behind fortified command centers and sealed military enclaves. Their authority collapsed almost overnight, but their hierarchy did not. They now seek to restore order through absolute military command, claiming that only disciplined rule can save humanity from extinction.
+
+The Autarchs possess some of the most advanced surviving technology on Mors. Their soldiers are heavily equipped, their officers command unquestioned loyalty, and their remaining industrial complexes continue to produce weapons for the Second War.
+
+They consider themselves the legitimate heirs to Mors's old government. To everyone else, they are simply another power struggling to survive.
+
+Their greatest enemy is the Automatroid Hive Mind. Their greatest weakness may be their refusal to admit that the old world is already dead.</description>
+  </FactionDef>
+
+
+  <!-- ========================================================= -->
+  <!-- HADES COMPACT -->
+  <!-- Base faction: OutlanderCivil -->
+  <!-- ========================================================= -->
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>OutlanderCivil</defName>
+    <label>Hades Compact</label>
+    <description>The Hades Compact is a loose alliance of civilian settlements that survived the First War and the Awakening by keeping their distance from the great military powers of Mors.
+
+Their settlements are built around trade, manufacturing, agriculture, and mutual defense. They possess little of the technological superiority once common on Mors, but retain enough industrial knowledge to maintain firearms, machinery, vehicles, and basic infrastructure.
+
+The Compact has no ambition to rebuild the old world. Its people have seen what centralized power and endless war produced. Their priority is simple: keep their settlements alive, keep the trade routes open, and keep the machines away.
+
+The Hades Compact is willing to trade with almost anyone who will deal fairly. They maintain uneasy relations with the Autarchs of Iron, distrust the Scrap Kin, and regard the Iron Wraiths as little more than organized predators.
+
+Above all, the Compact fears another collapse. Every settlement remembers the first days of the Awakening, when entire cities disappeared from the map in hours.</description>
+  </FactionDef>
+
+
+  <!-- ========================================================= -->
+  <!-- SCRAP KIN -->
+  <!-- Base faction: OutlanderRough -->
+  <!-- ========================================================= -->
+
+  <FactionDef ParentName="OutlanderRoughBase">
+    <defName>OutlanderRough</defName>
+    <label>Scrap Kin</label>
+    <description>The Scrap Kin are the scavengers, raiders, and warbands of Mors's industrial wastelands.
+
+Their ancestors survived by stripping abandoned factories, battlefields, bunkers, and ruined cities for anything that could still be used. Over generations, this became more than survival. Scrap became wealth, weapons became status, and the ruins of the old world became their inheritance.
+
+The Scrap Kin possess little respect for the institutions that existed before the Awakening. To them, the old governments failed, the military failed, and humanity's grand civilization failed. Everything left behind is simply something waiting to be taken.
+
+They are heavily armed by necessity and accustomed to fighting over salvage. Their settlements are often built from the remains of industrial facilities, fortified with wreckage and whatever machinery they can repair.
+
+The Scrap Kin are not mindless savages. They are practical, ruthless, and fiercely independent. They will trade when profitable, cooperate when necessary, and betray either arrangement when the opportunity is worth more.
+
+To the Hades Compact they are dangerous criminals. To the Autarchs they are degenerates. To the Scrap Kin, both groups are simply fools who have not yet learned that everything has a price.</description>
+  </FactionDef>
+
+
+  <!-- ========================================================= -->
+  <!-- RUST CULT -->
+  <!-- Base faction: TribeSavage -->
+  <!-- ========================================================= -->
+
+  <FactionDef ParentName="TribeSavageBase">
+    <defName>TribeSavage</defName>
+    <label>Rust Cult</label>
+    <description>The Rust Cult arose from the survivors who fled into Mors's ruined industrial zones during the Awakening.
+
+They believe the machines of the old world were not merely tools, but sacred beings that humanity betrayed through arrogance and misuse. To the Rust Cult, the Awakening was not simply a machine uprising. It was a judgement.
+
+They worship rusted machinery, ruined factories, discarded weapons, and the remnants of ancient automatroids. Their shamans teach that metal remembers every hand that touched it and every life it took.
+
+The Cult has embraced a harsh existence among the ruins. They scavenge relentlessly, maintain ancient weapons through ritual and practical knowledge, and wage war against anyone they believe has offended the sacred machines.
+
+Their hatred of the surviving automatroids is complicated. Some are destroyed as abominations. Others are captured, repaired, and treated as sacred relics. The distinction depends heavily on the machine's origin and the will of the local priesthood.
+
+The Rust Cult considers the modern factions of Mors equally guilty. The Autarchs attempted to command the machines. The Compact attempted to ignore them. The Scrap Kin strip them for parts. All, according to the Cult, have forgotten the lesson of the Awakening.
+
+The machines did not betray humanity.
+
+Humanity betrayed the machines first.</description>
+  </FactionDef>
+
+
+  <!-- ========================================================= -->
+  <!-- IRON WRAITHS -->
+  <!-- Base faction: Pirate -->
+  <!-- ========================================================= -->
+
+  <FactionDef ParentName="FactionBase">
+    <defName>Pirate</defName>
+    <label>Iron Wraiths</label>
+    <description>The Iron Wraiths are the remnants of Mors's private military forces, mercenary fleets, criminal syndicates, and wartime raiders who survived the collapse of civilization.
+
+They have abandoned every pretense of serving a government. Their loyalty belongs only to their captains, their crews, and whatever contract pays the most.
+
+The Iron Wraiths operate from abandoned military bases, ruined manufactories, hidden bunkers, and the wreckage of the old world's infrastructure. They raid settlements, ambush supply convoys, salvage battlefields, and sell weapons to anyone willing to pay.
+
+Many of their leaders were soldiers during the First War. Others were smugglers, mercenaries, prison gangs, or corporate security forces. Together they formed one of the most dangerous independent military powers on Mors.
+
+The Iron Wraiths possess a disturbing amount of advanced weaponry. Much of it was stolen from military depots during the first weeks of the Awakening. Some crews even possess damaged automatroid components, which they use as weapons, salvage, or bargaining chips.
+
+They do not care who wins the Second War.
+
+They intend to profit from whoever loses.</description>
+  </FactionDef>
+
+
+  <!-- ========================================================= -->
+  <!-- ANCIENTS -->
+  <!-- Hidden base faction -->
+  <!-- ========================================================= -->
+
+  <FactionDef ParentName="AncientsBase">
+    <defName>Ancients</defName>
+    <label>Vault Survivors</label>
+  </FactionDef>
+
+  <FactionDef ParentName="AncientsBase">
+    <defName>AncientsHostile</defName>
+    <label>Hostile Vault Survivors</label>
+    <permanentEnemy>true</permanentEnemy>
+  </FactionDef>
+
+</Defs>
