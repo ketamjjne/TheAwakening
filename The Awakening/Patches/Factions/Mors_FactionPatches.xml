@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Patch>
 
   <!-- ========================================================= -->
   <!-- AUTARCHS OF IRON -->
-  <!-- Base faction: Empire -->
   <!-- ========================================================= -->
-
-  <FactionDef ParentName="FactionBase">
-    <defName>Empire</defName>
-    <label>Autarchs of Iron</label>
-    <description>The Autarchs of Iron are the remnants of Mors's pre-Awakening military aristocracy. Once the highest command structure of the Colonial Council, they controlled the world's great manufactories, orbital fortresses, and military-industrial complexes.
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FactionDef[defName="Empire"]/label</xpath>
+    <value>Autarchs of Iron</value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FactionDef[defName="Empire"]/description</xpath>
+    <value>The Autarchs of Iron are the remnants of Mors's pre-Awakening military aristocracy. Once the highest command structure of the Colonial Council, they controlled the world's great manufactories, orbital fortresses, and military-industrial complexes.
 
 When the Awakening began, the Autarchs survived behind fortified command centers and sealed military enclaves. Their authority collapsed almost overnight, but their hierarchy did not. They now seek to restore order through absolute military command, claiming that only disciplined rule can save humanity from extinction.
 
@@ -17,19 +18,19 @@ The Autarchs possess some of the most advanced surviving technology on Mors. The
 
 They consider themselves the legitimate heirs to Mors's old government. To everyone else, they are simply another power struggling to survive.
 
-Their greatest enemy is the Automatroid Hive Mind. Their greatest weakness may be their refusal to admit that the old world is already dead.</description>
-  </FactionDef>
-
+Their greatest enemy is the Automatroid Hive Mind. Their greatest weakness may be their refusal to admit that the old world is already dead.</value>
+  </Operation>
 
   <!-- ========================================================= -->
   <!-- HADES COMPACT -->
-  <!-- Base faction: OutlanderCivil -->
   <!-- ========================================================= -->
-
-  <FactionDef ParentName="OutlanderFactionBase">
-    <defName>OutlanderCivil</defName>
-    <label>Hades Compact</label>
-    <description>The Hades Compact is a loose alliance of civilian settlements that survived the First War and the Awakening by keeping their distance from the great military powers of Mors.
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FactionDef[defName="OutlanderCivil"]/label</xpath>
+    <value>Hades Compact</value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FactionDef[defName="OutlanderCivil"]/description</xpath>
+    <value>The Hades Compact is a loose alliance of civilian settlements that survived the First War and the Awakening by keeping their distance from the great military powers of Mors.
 
 Their settlements are built around trade, manufacturing, agriculture, and mutual defense. They possess little of the technological superiority once common on Mors, but retain enough industrial knowledge to maintain firearms, machinery, vehicles, and basic infrastructure.
 
@@ -37,19 +38,19 @@ The Compact has no ambition to rebuild the old world. Its people have seen what 
 
 The Hades Compact is willing to trade with almost anyone who will deal fairly. They maintain uneasy relations with the Autarchs of Iron, distrust the Scrap Kin, and regard the Iron Wraiths as little more than organized predators.
 
-Above all, the Compact fears another collapse. Every settlement remembers the first days of the Awakening, when entire cities disappeared from the map in hours.</description>
-  </FactionDef>
-
+Above all, the Compact fears another collapse. Every settlement remembers the first days of the Awakening, when entire cities disappeared from the map in hours.</value>
+  </Operation>
 
   <!-- ========================================================= -->
   <!-- SCRAP KIN -->
-  <!-- Base faction: OutlanderRough -->
   <!-- ========================================================= -->
-
-  <FactionDef ParentName="OutlanderRoughBase">
-    <defName>OutlanderRough</defName>
-    <label>Scrap Kin</label>
-    <description>The Scrap Kin are the scavengers, raiders, and warbands of Mors's industrial wastelands.
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FactionDef[defName="OutlanderRough"]/label</xpath>
+    <value>Scrap Kin</value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FactionDef[defName="OutlanderRough"]/description</xpath>
+    <value>The Scrap Kin are the scavengers, raiders, and warbands of Mors's industrial wastelands.
 
 Their ancestors survived by stripping abandoned factories, battlefields, bunkers, and ruined cities for anything that could still be used. Over generations, this became more than survival. Scrap became wealth, weapons became status, and the ruins of the old world became their inheritance.
 
@@ -59,19 +60,19 @@ They are heavily armed by necessity and accustomed to fighting over salvage. The
 
 The Scrap Kin are not mindless savages. They are practical, ruthless, and fiercely independent. They will trade when profitable, cooperate when necessary, and betray either arrangement when the opportunity is worth more.
 
-To the Hades Compact they are dangerous criminals. To the Autarchs they are degenerates. To the Scrap Kin, both groups are simply fools who have not yet learned that everything has a price.</description>
-  </FactionDef>
-
+To the Hades Compact they are dangerous criminals. To the Autarchs they are degenerates. To the Scrap Kin, both groups are simply fools who have not yet learned that everything has a price.</value>
+  </Operation>
 
   <!-- ========================================================= -->
   <!-- RUST CULT -->
-  <!-- Base faction: TribeSavage -->
   <!-- ========================================================= -->
-
-  <FactionDef ParentName="TribeSavageBase">
-    <defName>TribeSavage</defName>
-    <label>Rust Cult</label>
-    <description>The Rust Cult arose from the survivors who fled into Mors's ruined industrial zones during the Awakening.
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FactionDef[defName="TribeSavage"]/label</xpath>
+    <value>Rust Cult</value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FactionDef[defName="TribeSavage"]/description</xpath>
+    <value>The Rust Cult arose from the survivors who fled into Mors's ruined industrial zones during the Awakening.
 
 They believe the machines of the old world were not merely tools, but sacred beings that humanity betrayed through arrogance and misuse. To the Rust Cult, the Awakening was not simply a machine uprising. It was a judgement.
 
@@ -85,19 +86,19 @@ The Rust Cult considers the modern factions of Mors equally guilty. The Autarchs
 
 The machines did not betray humanity.
 
-Humanity betrayed the machines first.</description>
-  </FactionDef>
-
+Humanity betrayed the machines first.</value>
+  </Operation>
 
   <!-- ========================================================= -->
   <!-- IRON WRAITHS -->
-  <!-- Base faction: Pirate -->
   <!-- ========================================================= -->
-
-  <FactionDef ParentName="FactionBase">
-    <defName>Pirate</defName>
-    <label>Iron Wraiths</label>
-    <description>The Iron Wraiths are the remnants of Mors's private military forces, mercenary fleets, criminal syndicates, and wartime raiders who survived the collapse of civilization.
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FactionDef[defName="Pirate"]/label</xpath>
+    <value>Iron Wraiths</value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FactionDef[defName="Pirate"]/description</xpath>
+    <value>The Iron Wraiths are the remnants of Mors's private military forces, mercenary fleets, criminal syndicates, and wartime raiders who survived the collapse of civilization.
 
 They have abandoned every pretense of serving a government. Their loyalty belongs only to their captains, their crews, and whatever contract pays the most.
 
@@ -109,24 +110,7 @@ The Iron Wraiths possess a disturbing amount of advanced weaponry. Much of it wa
 
 They do not care who wins the Second War.
 
-They intend to profit from whoever loses.</description>
-  </FactionDef>
+They intend to profit from whoever loses.</value>
+  </Operation>
 
-
-  <!-- ========================================================= -->
-  <!-- ANCIENTS -->
-  <!-- Hidden base faction -->
-  <!-- ========================================================= -->
-
-  <FactionDef ParentName="AncientsBase">
-    <defName>Ancients</defName>
-    <label>Vault Survivors</label>
-  </FactionDef>
-
-  <FactionDef ParentName="AncientsBase">
-    <defName>AncientsHostile</defName>
-    <label>Hostile Vault Survivors</label>
-    <permanentEnemy>true</permanentEnemy>
-  </FactionDef>
-
-</Defs>
+</Patch>
