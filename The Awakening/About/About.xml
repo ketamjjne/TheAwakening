@@ -4,7 +4,17 @@
 
   <author>Ketamjne</author>
 
-  <packageId>yourname.theawakening</packageId>
+  <packageId>ketamjne.theawakening</packageId>
+  <modDependenciesByVersion>
+  <v1.6>
+    <li>
+      <packageId>Aoba.DeadManSwitch.Core</packageId>
+      <displayName>The Dead Man's Switch</displayName>
+	  <packageId>AOBA.Framework</packageId>
+	  <displayName>Fortified Feature Framework</displayName>
+    </li>
+  </v1.6>
+</modDependenciesByVersion>
 
   <supportedVersions>
     <li>1.6</li>
