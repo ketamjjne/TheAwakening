@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>DMS_Automatroid_Hostile</defName>
+
+        <label>automatroid remnants</label>
+        <description>
+            Automatroids whose ancient directives have degraded into an endless war against organic life.
+        </description>
+
+        <pawnSingular>automatroid</pawnSingular>
+        <pawnsPlural>automatroids</pawnsPlural>
+
+        <hidden>true</hidden>
+        <humanlikeFaction>false</humanlikeFaction>
+
+        <canStageAttacks>true</canStageAttacks>
+        <autoFlee>false</autoFlee>
+        <canUseAvoidGrid>true</canUseAvoidGrid>
+
+        <techLevel>Spacer</techLevel>
+
+        <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        <maxCountAtGameStart>0</maxCountAtGameStart>
+        <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+
+        <earliestRaidDays>40</earliestRaidDays>
+
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(400,200)</li>
+                <li>(900,300)</li>
+                <li>(100000,10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(0,0)</li>
+                <li>(100000,0.25)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>
+
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+
+                <options>
+                    <DMS_Mech_Soldat>8</DMS_Mech_Soldat>
+                    <DMS_Mech_Soldat_B>4</DMS_Mech_Soldat_B>
+                    <DMS_Mech_Grenadier>2</DMS_Mech_Grenadier>
+                    <DMS_Mech_Kanonier>1</DMS_Mech_Kanonier>
+                </options>
+            </li>
+        </pawnGroupMakers>
+
+    </FactionDef>
+
+</Defs>
