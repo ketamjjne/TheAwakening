@@ -63,6 +63,7 @@ The Rust Cult is fiercely hostile toward those who embrace the old technological
 Operating from ruined industrial complexes, derelict military facilities, and hidden strongholds, the Iron Wraiths prey upon isolated settlements and traveling caravans. They raid for weapons, ammunition, fuel, medicine, and anything else that can keep their warbands alive.
 
 Some claim the Iron Wraiths helped cause the Second War. Others believe they simply recognized the inevitable collapse before everyone else did. Whatever the truth, they have no intention of allowing peace to return to Mors.</value>
+  </Operation>
 
   <!-- AUTARCHS OF IRON -->
   <Operation Class="PatchOperationReplace">
