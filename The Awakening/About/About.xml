@@ -4,27 +4,25 @@
   <author>Ketamjne</author>
   <packageId>ketamjne.theawakening</packageId>
 
-  <modDependenciesByVersion>
-    <v1.6>
-      <li>
-        <packageId>Aoba.DeadManSwitch.Core</packageId>
-        <displayName>The Dead Man's Switch</displayName>
-      </li>
-      <li>
-        <packageId>AOBA.Framework</packageId>
-        <displayName>Fortified Feature Framework</displayName>
-      </li>
-    </v1.6>
-  </modDependenciesByVersion>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+
+  <modDependencies>
+    <li>
+      <packageId>Aoba.DeadManSwitch.Core</packageId>
+      <displayName>The Dead Man's Switch</displayName>
+    </li>
+    <li>
+      <packageId>AOBA.Framework</packageId>
+      <displayName>Fortified Feature Framework</displayName>
+    </li>
+  </modDependencies>
 
   <loadAfter>
     <li>Aoba.DeadManSwitch.Core</li>
     <li>AOBA.Framework</li>
   </loadAfter>
-
-  <supportedVersions>
-    <li>1.6</li>
-  </supportedVersions>
 
   <description>
 The Awakening is a complete world-conversion mod inspired by the Dead Man's Switch universe.
