@@ -9,15 +9,17 @@
   </supportedVersions>
 
   <modDependencies>
-    <li>
-      <packageId>Aoba.DeadManSwitch.Core</packageId>
-      <displayName>The Dead Man's Switch</displayName>
-    </li>
-    <li>
-      <packageId>AOBA.Framework</packageId>
-      <displayName>Fortified Feature Framework</displayName>
-    </li>
-  </modDependencies>
+  <li>
+    <packageId>Aoba.DeadManSwitch.Core</packageId>
+    <displayName>The Dead Man's Switch</displayName>
+    <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=3121742525</steamWorkshopUrl>
+  </li>
+  <li>
+    <packageId>AOBA.Framework</packageId>
+    <displayName>Fortified Feature Framework</displayName>
+    <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=3498575851</steamWorkshopUrl>
+  </li>
+</modDependencies>
 
   <loadAfter>
     <li>Aoba.DeadManSwitch.Core</li>
