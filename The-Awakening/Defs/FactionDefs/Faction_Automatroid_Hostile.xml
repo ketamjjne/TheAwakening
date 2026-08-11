@@ -32,12 +32,12 @@
         <earliestRaidDays>40</earliestRaidDays>
 
         <!-- Automatroid faction -->
-        <techLevel>Spacer</techLevel>
+        <techLevel>Ultra</techLevel>
 
         <!-- No settlements / world generation -->
         <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
-        <requiredCountAtGameStart>0</requiredCountAtGameStart>
-        <maxCountAtGameStart>0</maxCountAtGameStart>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxCountAtGameStart>1</maxCountAtGameStart>
 
         <!-- Raid threat scaling -->
         <maxPawnCostPerTotalPointsCurve>
