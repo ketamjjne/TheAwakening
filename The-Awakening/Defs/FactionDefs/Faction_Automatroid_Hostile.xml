@@ -13,33 +13,45 @@
         <pawnSingular>automatroid</pawnSingular>
         <pawnsPlural>automatroids</pawnsPlural>
 
-        <!-- Hidden from normal faction configuration -->
+        <!-- Hidden from normal faction configuration, but still generated into the world. -->
         <hidden>true</hidden>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxCountAtGameStart>1</maxCountAtGameStart>
+        <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+        <canMakeRandomly>false</canMakeRandomly>
 
-        <!-- This is a non-humanlike machine faction -->
+        <!-- This is a non-humanlike machine faction. -->
         <humanlikeFaction>false</humanlikeFaction>
 
-        <!-- Permanently hostile -->
+        <!-- Permanently hostile. -->
         <permanentEnemyToEveryoneExcept>
         </permanentEnemyToEveryoneExcept>
+        <startingGoodwill>
+            <min>-100</min>
+            <max>-100</max>
+        </startingGoodwill>
+        <naturalColonyGoodwill>
+            <min>-100</min>
+            <max>-100</max>
+        </naturalColonyGoodwill>
 
-        <!-- Raid behavior -->
+        <!-- Raid behavior. -->
         <canStageAttacks>true</canStageAttacks>
         <autoFlee>false</autoFlee>
         <canUseAvoidGrid>true</canUseAvoidGrid>
 
-        <!-- Do not allow this faction to generate immediately -->
+        <!-- Do not allow this faction to generate immediately. -->
         <earliestRaidDays>40</earliestRaidDays>
 
-        <!-- Automatroid faction -->
+        <!-- Automatroid faction. -->
         <techLevel>Spacer</techLevel>
 
-        <!-- No settlements / world generation -->
+        <!-- No settlements / world generation configuration. -->
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxCountAtGameStart>1</maxCountAtGameStart>
         <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
-        <requiredCountAtGameStart>0</requiredCountAtGameStart>
-        <maxCountAtGameStart>0</maxCountAtGameStart>
 
-        <!-- Raid threat scaling -->
+        <!-- Raid threat scaling. -->
         <maxPawnCostPerTotalPointsCurve>
             <points>
                 <li>(400,200)</li>
@@ -62,7 +74,7 @@
             </points>
         </raidLootValueFromPointsCurve>
 
-        <!-- Normal combat groups -->
+        <!-- Normal combat groups. -->
         <pawnGroupMakers>
 
             <li>
