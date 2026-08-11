@@ -8,9 +8,7 @@
 
         <label>automatroid remnants</label>
 
-        <description>
-            Automatroids that have long since abandoned any remaining directive except the destruction of organic life. Their ancient combat protocols identify all living settlements as hostile.
-        </description>
+        <description>Automatroids that have long since abandoned any remaining directive except the destruction of organic life. Their ancient combat protocols identify all living settlements as hostile.</description>
 
         <pawnSingular>automatroid</pawnSingular>
         <pawnsPlural>automatroids</pawnsPlural>
@@ -18,8 +16,12 @@
         <!-- Hidden from normal faction configuration -->
         <hidden>true</hidden>
 
-        <!-- Cannot be selected/created as a normal world faction -->
+        <!-- This is a non-humanlike machine faction -->
         <humanlikeFaction>false</humanlikeFaction>
+
+        <!-- Permanently hostile -->
+        <permanentEnemyToEveryoneExcept>
+        </permanentEnemyToEveryoneExcept>
 
         <!-- Raid behavior -->
         <canStageAttacks>true</canStageAttacks>
@@ -29,14 +31,10 @@
         <!-- Do not allow this faction to generate immediately -->
         <earliestRaidDays>40</earliestRaidDays>
 
-        <!-- Permanently hostile -->
-        <permanentEnemyToEveryoneExcept>
-        </permanentEnemyToEveryoneExcept>
-
         <!-- Automatroid faction -->
         <techLevel>Spacer</techLevel>
 
-        <!-- No settlements -->
+        <!-- No settlements / world generation -->
         <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
         <requiredCountAtGameStart>0</requiredCountAtGameStart>
         <maxCountAtGameStart>0</maxCountAtGameStart>
@@ -57,6 +55,13 @@
             </points>
         </raidCommonalityFromPointsCurve>
 
+        <raidLootValueFromPointsCurve>
+            <points>
+                <li>(0,0)</li>
+                <li>(100000,10000)</li>
+            </points>
+        </raidLootValueFromPointsCurve>
+
         <!-- Normal combat groups -->
         <pawnGroupMakers>
 
@@ -65,12 +70,10 @@
                 <commonality>100</commonality>
 
                 <options>
-
                     <DMS_Mech_Soldat>8</DMS_Mech_Soldat>
                     <DMS_Mech_Soldat_B>4</DMS_Mech_Soldat_B>
                     <DMS_Mech_Grenadier>2</DMS_Mech_Grenadier>
                     <DMS_Mech_Kanonier>1</DMS_Mech_Kanonier>
-
                 </options>
 
             </li>
