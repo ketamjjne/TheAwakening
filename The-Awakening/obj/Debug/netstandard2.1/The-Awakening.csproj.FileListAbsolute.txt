@@ -3,4 +3,8 @@ C:\Users\Ket\Documents\GitHub\TheAwakening\The-Awakening\obj\Debug\netstandard2.
 C:\Users\Ket\Documents\GitHub\TheAwakening\The-Awakening\obj\Debug\netstandard2.1\The-Awakening.AssemblyInfoInputs.cache
 C:\Users\Ket\Documents\GitHub\TheAwakening\The-Awakening\obj\Debug\netstandard2.1\The-Awakening.AssemblyInfo.cs
 C:\Users\Ket\Documents\GitHub\TheAwakening\The-Awakening\obj\Debug\netstandard2.1\The-Awakening.csproj.CoreCompileInputs.cache
-C:\Users\Ket\Documents\GitHub\TheAwakening\The-Awakening\obj\Debug\netstandard2.1\The-Awakening.sourcelink.json
+C:\Users\Ket\Documents\GitHub\TheAwakening\The-Awakening\bin\Debug\netstandard2.1\The-Awakening.deps.json
+C:\Users\Ket\Documents\GitHub\TheAwakening\The-Awakening\bin\Debug\netstandard2.1\The-Awakening.dll
+C:\Users\Ket\Documents\GitHub\TheAwakening\The-Awakening\bin\Debug\netstandard2.1\The-Awakening.pdb
+C:\Users\Ket\Documents\GitHub\TheAwakening\The-Awakening\obj\Debug\netstandard2.1\The-Awakening.dll
+C:\Users\Ket\Documents\GitHub\TheAwakening\The-Awakening\obj\Debug\netstandard2.1\The-Awakening.pdb

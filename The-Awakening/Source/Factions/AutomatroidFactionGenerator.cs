@@ -30,8 +30,12 @@ namespace TheAwakening
             if (Find.FactionManager.AllFactions.Any(f => f.def == def))
                 return;
 
-            Faction faction = FactionGenerator.NewGeneratedFaction(def);
-            Find.FactionManager.Add(faction);
+            Faction faction = FactionGenerator.NewGeneratedFaction(
+                new FactionGeneratorParms
+                {
+                    factionDef = def
+                }
+            );
 
             Log.Message(
                 "[The Awakening] Created hidden Automatroid faction: "

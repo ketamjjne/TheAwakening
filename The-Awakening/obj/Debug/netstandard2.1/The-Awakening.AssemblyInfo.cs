@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("The-Awakening")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc8c70c20f67f6a76f66d77d06467e379d65f166")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59a2032f4d241f07a641562491eb9bcd1733c6f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("The-Awakening")]
 [assembly: System.Reflection.AssemblyTitleAttribute("The-Awakening")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,16 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <RootNamespace>TheAwakening</RootNamespace> 
-    <AssemblyName>The-Awakening</AssemblyName>
-    <LangVersion>latest</LangVersion>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<RootNamespace>TheAwakening</RootNamespace>
+		<AssemblyName>The-Awakening</AssemblyName>
+		<LangVersion>latest</LangVersion>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-   <Reference Include="Assembly-CSharp">
-    <HintPath>C:\Games\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
-   </Reference>
-  </ItemGroup>
+	<ItemGroup>
+		<!-- RimWorld -->
+		<Reference Include="Assembly-CSharp">
+			<HintPath>C:\Games\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<!-- Unity -->
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>C:\Games\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<!-- Harmony -->
+		<Reference Include="0Harmony">
+			<HintPath>C:\Games\RimWorld\RimWorldWin64_Data\Managed\0Harmony.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
 
 </Project>
