@@ -46,11 +46,6 @@
         <!-- Automatroid faction. -->
         <techLevel>Spacer</techLevel>
 
-        <!-- No settlements / world generation configuration. -->
-        <requiredCountAtGameStart>1</requiredCountAtGameStart>
-        <maxCountAtGameStart>1</maxCountAtGameStart>
-        <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
-
         <!-- Raid threat scaling. -->
         <maxPawnCostPerTotalPointsCurve>
             <points>
