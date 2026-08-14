@@ -24,16 +24,7 @@
         <humanlikeFaction>false</humanlikeFaction>
 
         <!-- Permanently hostile. -->
-        <permanentEnemyToEveryoneExcept>
-        </permanentEnemyToEveryoneExcept>
-        <startingGoodwill>
-            <min>-100</min>
-            <max>-100</max>
-        </startingGoodwill>
-        <naturalColonyGoodwill>
-            <min>-100</min>
-            <max>-100</max>
-        </naturalColonyGoodwill>
+        <permanentEnemy>true</permanentEnemy>
 
         <!-- Raid behavior. -->
         <canStageAttacks>true</canStageAttacks>
