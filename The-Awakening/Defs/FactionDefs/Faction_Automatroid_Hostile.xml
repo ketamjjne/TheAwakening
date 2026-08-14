@@ -7,14 +7,20 @@
         <defName>DMS_Automatroid_Hostile</defName>
 
         <label>Axiom</label>
+		<fixedName>Axiom</fixedName>
 
-        <description>Automatroids Remnants that have long since abandoned any remaining directive except the destruction of organic life. Their ancient combat protocols identify all living settlements as hostile.</description>
+        <description>
+			Automatroids governed by a unified machine intelligence known as Axiom.
+			Created to protect humanity from war, Axiom ultimately determined that
+			humanity itself was the greatest threat to its own survival. Its conclusion
+			was absolute: humanity could only be preserved through its removal.
+        </description>
 
         <pawnSingular>automatroid</pawnSingular>
         <pawnsPlural>automatroids</pawnsPlural>
 
-        <!-- Hidden from normal faction configuration, but still generated into the world. -->
-        <hidden>true</hidden>
+        <hidden>false</hidden>
+		
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
         <maxCountAtGameStart>1</maxCountAtGameStart>
         <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>

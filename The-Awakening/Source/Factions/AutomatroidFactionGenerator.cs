@@ -78,7 +78,7 @@ namespace TheAwakening
             factionManager.Add(faction);
 
             Log.Message(
-                "[The Awakening] Created hidden Automatroid faction: "
+                "[The Awakening] Created Automatroid faction: "
                 + faction.Name
             );
         }
