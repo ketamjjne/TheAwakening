@@ -14,7 +14,7 @@ namespace TheAwakening
 
         private static void EnsureAutomatroidFactionExists()
         {
-            if (Find.FactionManager == null)
+            if (Current.Game == null)
                 return;
 
             FactionDef def = DefDatabase<FactionDef>.GetNamedSilentFail(
@@ -23,11 +23,18 @@ namespace TheAwakening
 
             if (def == null)
             {
-                Log.Error("[The Awakening] DMS_Automatroid_Hostile FactionDef not found.");
+                Log.Error(
+                    "[The Awakening] DMS_Automatroid_Hostile FactionDef not found."
+                );
                 return;
             }
 
-            if (Find.FactionManager.AllFactions.Any(f => f.def == def))
+            FactionManager factionManager = Current.Game.World.factionManager;
+
+            if (factionManager == null)
+                return;
+
+            if (factionManager.AllFactions.Any(f => f.def == def))
                 return;
 
             Faction faction = FactionGenerator.NewGeneratedFaction(
@@ -37,7 +44,7 @@ namespace TheAwakening
                 }
             );
 
-            Find.FactionManager.Add(faction);
+            factionManager.Add(faction);
 
             Log.Message(
                 "[The Awakening] Created hidden Automatroid faction: "
