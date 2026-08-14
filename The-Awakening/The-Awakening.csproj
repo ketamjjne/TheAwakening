@@ -24,8 +24,8 @@
 
 		<!-- Harmony -->
 		<Reference Include="0Harmony">
-			<HintPath>C:\Games\RimWorld\RimWorldWin64_Data\Managed\0Harmony.dll</HintPath>
-			<Private>false</Private>
+			<HintPath>C:\Games\RimWorld\Mods\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+			<Private>False</Private>
 		</Reference>
 	</ItemGroup>
 

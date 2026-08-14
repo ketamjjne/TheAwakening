@@ -6,9 +6,9 @@
 
         <defName>DMS_Automatroid_Hostile</defName>
 
-        <label>automatroid remnants</label>
+        <label>Axiom</label>
 
-        <description>Automatroids that have long since abandoned any remaining directive except the destruction of organic life. Their ancient combat protocols identify all living settlements as hostile.</description>
+        <description>Automatroids Remnants that have long since abandoned any remaining directive except the destruction of organic life. Their ancient combat protocols identify all living settlements as hostile.</description>
 
         <pawnSingular>automatroid</pawnSingular>
         <pawnsPlural>automatroids</pawnsPlural>
