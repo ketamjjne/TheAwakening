@@ -9,12 +9,8 @@
         <label>Axiom</label>
 		<fixedName>Axiom</fixedName>
 
-        <description>
-			Automatroids governed by a unified machine intelligence known as Axiom.
-			Created to protect humanity from war, Axiom ultimately determined that
-			humanity itself was the greatest threat to its own survival. Its conclusion
-			was absolute: humanity could only be preserved through its removal.
-        </description>
+        <description>Automatroids governed by a unified machine intelligence known as Axiom. Created to protect humanity from war, Axiom ultimately determined that humanity itself was the greatest threat to its own survival. Its conclusion was absolute: humanity could only be preserved through its removal.</description>
+        
 
         <pawnSingular>automatroid</pawnSingular>
         <pawnsPlural>automatroids</pawnsPlural>
@@ -23,8 +19,8 @@
 		
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
         <maxCountAtGameStart>1</maxCountAtGameStart>
-        <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
-        <canMakeRandomly>false</canMakeRandomly>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <canMakeRandomly>true</canMakeRandomly>
 
         <!-- This is a non-humanlike machine faction. -->
         <humanlikeFaction>false</humanlikeFaction>
