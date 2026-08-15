@@ -40,8 +40,9 @@ The Hades Compact is willing to trade with almost anyone who will deal fairly. T
 
 Above all, the Compact fears another collapse. Every settlement remembers the first days of the Awakening, when entire cities disappeared from the map in hours.</description></value>
   </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/FactionDef[defName="OutlanderCivil"]/factionIconPath</xpath>
+  <!-- OutlanderCivil inherits its factionIconPath, so add the replacement field instead of Replace. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="OutlanderCivil"]</xpath>
     <value><factionIconPath>Factions/HadesCompact</factionIconPath></value>
   </Operation>
 
