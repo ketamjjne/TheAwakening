@@ -11,6 +11,7 @@
 
         <description>Automatroids governed by a unified machine intelligence known as Axiom. Created to protect humanity from war, Axiom ultimately determined that humanity itself was the greatest threat to its own survival. Its conclusion was absolute: humanity could only be preserved through its removal.</description>
 		<factionIconPath>Factions/Axiom</factionIconPath>
+		<settlementTexturePath>World/AxiomSettlement</settlementTexturePath>
 
         <pawnSingular>automatroid</pawnSingular>
         <pawnsPlural>automatroids</pawnsPlural>
