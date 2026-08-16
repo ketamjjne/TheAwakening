@@ -16,7 +16,7 @@
         <pawnSingular>automatroid</pawnSingular>
         <pawnsPlural>automatroids</pawnsPlural>
 
-        <hidden>false</hidden>
+        <hidden>true</hidden>
 		
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
         <maxCountAtGameStart>1</maxCountAtGameStart>
