@@ -22,6 +22,7 @@
         <maxCountAtGameStart>1</maxCountAtGameStart>
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
         <canMakeRandomly>false</canMakeRandomly>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
 
 		<!-- Never generate faction bases/settlements. -->
 		<settlementGenerationWeight>0</settlementGenerationWeight>
