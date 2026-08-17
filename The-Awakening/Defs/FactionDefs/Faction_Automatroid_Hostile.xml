@@ -3,10 +3,116 @@
 <Defs>
 
     <FactionDef ParentName="FactionBase">
-
         <defName>DMS_Automatroid_Hostile</defName>
-
         <label>Axiom</label>
         <fixedName>Axiom</fixedName>
+        <description>Automatroids governed by a unified machine intelligence known as Axiom. Created to protect humanity from war, Axiom now interprets that directive through ruthless machine logic.</description>
+        <pawnSingular>automatroid</pawnSingular>
+        <pawnsPlural>automatroids</pawnsPlural>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <factionNameMaker>NamerFactionMechanoid</factionNameMaker>
+        <factionIconPath>World/WorldObjects/Expanding/Mechanoids</factionIconPath>
+        <canStageAttacks>true</canStageAttacks>
+        <arrivalLayerWhitelist>
+            <li>Surface</li>
+        </arrivalLayerWhitelist>
+        <colorSpectrum>
+            <li>(0.78, 0.79, 0.71)</li>
+        </colorSpectrum>
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(300,0)</li>
+                <li>(700,1)</li>
+                <li>(1400,1.8)</li>
+                <li>(2800,2.2)</li>
+                <li>(4000,2.6)</li>
+                <li>(10000,3.0)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>
+        <humanlikeFaction>false</humanlikeFaction>
+        <hidden>true</hidden>
+        <autoFlee>false</autoFlee>
+        <canUseAvoidGrid>false</canUseAvoidGrid>
+        <techLevel>Ultra</techLevel>
+        <earliestRaidDays>45</earliestRaidDays>
+        <permanentEnemy>true</permanentEnemy>
+        <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(400,200)</li>
+                <li>(900,300)</li>
+                <li>(2000,500)</li>
+                <li>(4000,1000)</li>
+                <li>(10000,3000)</li>
+                <li>(100000,10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <Mech_Soldat>30</Mech_Soldat>
+                    <Mech_Scyther>12</Mech_Scyther>
+                    <Mech_Lancer>10</Mech_Lancer>
+                    <Mech_Pikeman>8</Mech_Pikeman>
+                    <Mech_CentipedeBlaster>5</Mech_CentipedeBlaster>
+                    <Mech_CentipedeGunner>4</Mech_CentipedeGunner>
+                    <Mech_CentipedeBurner>3</Mech_CentipedeBurner>
+                    <Mech_Termite>4</Mech_Termite>
+                </options>
+            </li>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>65</commonality>
+                <options>
+                    <Mech_Soldat>25</Mech_Soldat>
+                    <Mech_Lancer>12</Mech_Lancer>
+                    <Mech_Pikeman>10</Mech_Pikeman>
+                    <Mech_CentipedeBlaster>5</Mech_CentipedeBlaster>
+                    <Mech_CentipedeGunner>5</Mech_CentipedeGunner>
+                    <Mech_CentipedeBurner>3</Mech_CentipedeBurner>
+                </options>
+            </li>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>55</commonality>
+                <options>
+                    <Mech_Soldat>20</Mech_Soldat>
+                    <Mech_Scyther>15</Mech_Scyther>
+                    <Mech_Termite>6</Mech_Termite>
+                    <Mech_CentipedeBlaster>4</Mech_CentipedeBlaster>
+                </options>
+            </li>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>25</commonality>
+                <options>
+                    <Mech_Scyther>6</Mech_Scyther>
+                    <Mech_Lancer>5</Mech_Lancer>
+                    <Mech_Pikeman>5</Mech_Pikeman>
+                    <Mech_CentipedeBlaster>10</Mech_CentipedeBlaster>
+                    <Mech_CentipedeGunner>8</Mech_CentipedeGunner>
+                    <Mech_CentipedeBurner>6</Mech_CentipedeBurner>
+                    <Mech_Termite>5</Mech_Termite>
+                </options>
+            </li>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>10</commonality>
+                <options>
+                    <Mech_Scyther>10</Mech_Scyther>
+                    <Mech_Lancer>8</Mech_Lancer>
+                    <Mech_Pikeman>8</Mech_Pikeman>
+                    <Mech_CentipedeBlaster>8</Mech_CentipedeBlaster>
+                    <Mech_Termite>10</Mech_Termite>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>Textures/World/AxiomSettlement</settlementTexturePath>
+        <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>900</configurationListOrderPriority>
+    </FactionDef>
 
-        <description>Automatroids governed by a unified machine intelligence known as Axiom. Created to protect humanity from war, A
+</Defs>
